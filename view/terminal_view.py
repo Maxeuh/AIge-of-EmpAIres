@@ -108,7 +108,20 @@ class TerminalView(BaseView):
                     colored_line += f'\033[34m{char}\033[0m'
                 elif color == "red":
                     colored_line += f'\033[31m{char}\033[0m'
+                elif color == "green":
+                    colored_line += f'\033[32m{char}\033[0m'
+                elif color == "yellow":
+                    colored_line += f'\033[33m{char}\033[0m'
+                elif color == "purple":
+                    colored_line += f'\033[35m{char}\033[0m'
+                elif color == "cyan":
+                    colored_line += f'\033[36m{char}\033[0m'
+                elif color == "pink":
+                    colored_line += f'\033[95m{char}\033[0m'
+                elif color == "orange":
+                    colored_line += f'\033[93m{char}\033[0m'
                 else:
+                    # Default color handling
                     colored_line += f'\033[33m{char}\033[0m'
             x += 1
         return frame_line[:1] + colored_line + self.__terminal.normal + frame_line[1 + len(line):]
