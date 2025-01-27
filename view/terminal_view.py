@@ -97,7 +97,7 @@ class TerminalView(BaseView):
             #     colored_line += self.__terminal.blue(char)
             if char == '·':
                 colored_line += ' '
-            elif char == 'G':  # Grass
+            elif char == 'G':  # Gold 
                 colored_line += f"\033[33mG\033[0m"  # Yellow
             elif char == 'W':  # Wood
                 colored_line += f"\033[38;5;94mW\033[0m"  # Brown
@@ -107,9 +107,13 @@ class TerminalView(BaseView):
                 color = self.__map.indicate_color(Coordinate(x,y))
                 if(color == "white"):
                     colored_line += char
+                elif(color == "blue"):
+                    colored_line += f'\033[34m{char}\033[0m'
+                elif(color == "red"):
+                    colored_line += f'\033[31m{char}\033[0m'
                 else:
                     colored_line += f'\033[33m{char}\033[0m'
-            x+=1
+            x += 1
         return frame_line[:1] + colored_line + self.__terminal.normal + frame_line[1 + len(line):]
     
     def __add_coord(self, line: list[str]) -> list[str]:
@@ -147,6 +151,8 @@ class TerminalView(BaseView):
                 for i, line in enumerate(map_part[:min(len(map_part), self.__terminal_height - 2)]):
                     frame[i + 1] = self.__colored_line(line, frame[i + 1],y)
                     y += 1
+
+                # y += 1
                 frame = self.__add_coord(frame)
                 print("\n".join(frame))
                 self.__terminal.flush()
