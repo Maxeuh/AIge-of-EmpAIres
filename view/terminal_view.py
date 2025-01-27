@@ -125,11 +125,10 @@ class TerminalView(BaseView):
         line[-1] = f"{line[-1][:len(line[-1]) - len(bottom_right)]}{bottom_right}"
         return line
 
+
     def __display_loop(self) -> None:
         """
         Display the map in the terminal and update it each tick (depending on the FPS).
-        The display width and height are set to the terminal size
-        Display is composed of 2 layers: the map and the text ; they don't overlap.
         """
         with self.__terminal.fullscreen(), self.__terminal.cbreak(), self.__terminal.hidden_cursor():
             while not self.__stop_event.is_set():
@@ -143,15 +142,17 @@ class TerminalView(BaseView):
 
                 frame = self.__str_frame()
                 map_part = self.__str_map()
-                print(self.__terminal.clear(), end="")
+                output = []
                 y = 0
                 for i, line in enumerate(map_part[:min(len(map_part), self.__terminal_height - 2)]):
-                    frame[i + 1] = self.__colored_line(line, frame[i + 1],y)
+                    frame[i + 1] = self.__colored_line(line, frame[i + 1], y)
                     y += 1
 
-                # y += 1
                 frame = self.__add_coord(frame)
-                print("\n".join(frame))
+
+                # Join the frame into a single string to minimize I/O calls
+                output.append("\n".join(frame))
+                print(self.__terminal.move(0, 0) + "".join(output), end="")  # Use cursor positioning
                 self.__terminal.flush()
                 time.sleep(1 / self._BaseView__controller.get_settings().fps.value)
 
