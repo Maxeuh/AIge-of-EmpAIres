@@ -88,12 +88,18 @@ class TerminalView(BaseView):
         """
         colored_line = ""
         for char in line:
-            if char.isupper():
-                colored_line += self.__terminal.bold_red(char)
-            elif char.islower():
-                colored_line += self.__terminal.blue(char)
-            elif char == '·':
+            # if char.isupper():
+            #     colored_line += self.__terminal.bold_red(char)
+            # elif char.islower():
+            #     colored_line += self.__terminal.blue(char)
+            if char == '·':
                 colored_line += ' '
+            elif char == 'G':  # Grass
+                colored_line += f"\033[33mG\033[0m"  # Yellow
+            elif char == 'W':  # Wood
+                colored_line += f"\033[38;5;94mW\033[0m"  # Brown
+            elif char == 'F':  # Food
+                colored_line += f"\033[32mF\033[0m"  # Green
             else:
                 colored_line += char
         return frame_line[:1] + colored_line + self.__terminal.normal + frame_line[1 + len(line):]
