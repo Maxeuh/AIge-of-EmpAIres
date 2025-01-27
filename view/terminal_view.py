@@ -81,20 +81,17 @@ class TerminalView(BaseView):
         cropped_lines = [line[:map_width] for line in map_lines[:map_height]]
         return cropped_lines
     
-    def __colored_line(self, line: str, frame_line: str, y : int) -> str:
+    
+    def __colored_line(self, line: str, frame_line: str, y: int) -> str:
         """
         Color the map elements: uppercase letters in red and bold, lowercase letters in blue, and hide empty spaces.
         Include the frame in the colored line.
         """
-        x = 0;
+        x = 0
         colored_line = ""
+        abs_y = self.__from_coord.get_y() + y
         for char in line:
-            # print(i)
-            # print(y)
-            # if char.isupper():
-            #     colored_line += self.__terminal.bold_red(char)
-            # elif char.islower():
-            #     colored_line += self.__terminal.blue(char)
+            abs_x = self.__from_coord.get_x() + x
             if char == '·':
                 colored_line += ' '
             elif char == 'G':  # Gold 
@@ -104,18 +101,18 @@ class TerminalView(BaseView):
             elif char == 'F':  # Food
                 colored_line += f"\033[32mF\033[0m"  # Green
             else:
-                color = self.__map.indicate_color(Coordinate(x,y))
-                if(color == "white"):
+                color = self.__map.indicate_color(Coordinate(abs_x, abs_y))
+                if color == "white":
                     colored_line += char
-                elif(color == "blue"):
+                elif color == "blue":
                     colored_line += f'\033[34m{char}\033[0m'
-                elif(color == "red"):
+                elif color == "red":
                     colored_line += f'\033[31m{char}\033[0m'
                 else:
                     colored_line += f'\033[33m{char}\033[0m'
             x += 1
         return frame_line[:1] + colored_line + self.__terminal.normal + frame_line[1 + len(line):]
-    
+
     def __add_coord(self, line: list[str]) -> list[str]:
         """
         Add the top left coordinate on the top left corner of the frame.
