@@ -81,13 +81,16 @@ class TerminalView(BaseView):
         cropped_lines = [line[:map_width] for line in map_lines[:map_height]]
         return cropped_lines
     
-    def __colored_line(self, line: str, frame_line: str) -> str:
+    def __colored_line(self, line: str, frame_line: str, y : int) -> str:
         """
         Color the map elements: uppercase letters in red and bold, lowercase letters in blue, and hide empty spaces.
         Include the frame in the colored line.
         """
+        x = 0;
         colored_line = ""
         for char in line:
+            # print(i)
+            # print(y)
             # if char.isupper():
             #     colored_line += self.__terminal.bold_red(char)
             # elif char.islower():
@@ -101,7 +104,12 @@ class TerminalView(BaseView):
             elif char == 'F':  # Food
                 colored_line += f"\033[32mF\033[0m"  # Green
             else:
-                colored_line += char
+                color = self.__map.indicate_color(Coordinate(x,y))
+                if(color == "white"):
+                    colored_line += char
+                else:
+                    colored_line += f'\033[33m{char}\033[0m'
+            x+=1
         return frame_line[:1] + colored_line + self.__terminal.normal + frame_line[1 + len(line):]
     
     def __add_coord(self, line: list[str]) -> list[str]:
@@ -135,8 +143,10 @@ class TerminalView(BaseView):
                 frame = self.__str_frame()
                 map_part = self.__str_map()
                 print(self.__terminal.clear(), end="")
+                y = 0
                 for i, line in enumerate(map_part[:min(len(map_part), self.__terminal_height - 2)]):
-                    frame[i + 1] = self.__colored_line(line, frame[i + 1])
+                    frame[i + 1] = self.__colored_line(line, frame[i + 1],y)
+                    y += 1
                 frame = self.__add_coord(frame)
                 print("\n".join(frame))
                 self.__terminal.flush()
