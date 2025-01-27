@@ -1,5 +1,6 @@
 from collections import defaultdict
 from model.game_object import GameObject
+from model.entity import Entity
 from util.coordinate import Coordinate
 import typing
 if typing.TYPE_CHECKING:
@@ -350,3 +351,19 @@ class Map():
         new_map = Map(self.__size)
         new_map.__matrix = self.__matrix.copy()
         return new_map
+    
+    def indicate_color(self, coordinate: Coordinate) -> str:
+        """
+        Get the color of the object coordinate.
+
+        :param coordinate: The coordinate to get the color of.
+        :type coordinate: Coordinate
+        :return: The color of the coordinate.
+        :rtype: str
+        """
+        object: GameObject = self.get(coordinate)
+        if object is None:
+            return "white"
+        if isinstance(object, Entity):
+            return object.get_player().get_color()
+        return "white"
