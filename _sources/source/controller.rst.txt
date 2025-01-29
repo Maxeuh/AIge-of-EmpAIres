@@ -1,0 +1,61 @@
+controller package
+==================
+
+Submodules
+----------
+
+controller.AI\_controller module
+--------------------------------
+
+.. automodule:: controller.AI_controller
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+controller.command module
+-------------------------
+
+.. automodule:: controller.command
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+controller.game\_controller module
+----------------------------------
+
+.. automodule:: controller.game_controller
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+controller.interactions module
+------------------------------
+
+.. automodule:: controller.interactions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+controller.menu\_controller module
+----------------------------------
+
+.. automodule:: controller.menu_controller
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+controller.view\_controller module
+----------------------------------
+
+.. automodule:: controller.view_controller
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

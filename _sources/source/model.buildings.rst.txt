@@ -1,0 +1,53 @@
+model.buildings package
+=======================
+
+Submodules
+----------
+
+model.buildings.barracks module
+-------------------------------
+
+.. automodule:: model.buildings.barracks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.buildings.building module
+-------------------------------
+
+.. automodule:: model.buildings.building
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.buildings.farm module
+---------------------------
+
+.. automodule:: model.buildings.farm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.buildings.house module
+----------------------------
+
+.. automodule:: model.buildings.house
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.buildings.town\_center module
+-----------------------------------
+
+.. automodule:: model.buildings.town_center
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: model.buildings
+   :members:
+   :undoc-members:
+   :show-inheritance:

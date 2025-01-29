@@ -1,0 +1,12 @@
+AIge-of-EmpAIres
+================
+
+.. toctree::
+   :maxdepth: 4
+
+   controller
+   main
+   model
+   test
+   util
+   view

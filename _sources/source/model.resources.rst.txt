@@ -1,0 +1,45 @@
+model.resources package
+=======================
+
+Submodules
+----------
+
+model.resources.food module
+---------------------------
+
+.. automodule:: model.resources.food
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.resources.gold module
+---------------------------
+
+.. automodule:: model.resources.gold
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.resources.resource module
+-------------------------------
+
+.. automodule:: model.resources.resource
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.resources.wood module
+---------------------------
+
+.. automodule:: model.resources.wood
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: model.resources
+   :members:
+   :undoc-members:
+   :show-inheritance:

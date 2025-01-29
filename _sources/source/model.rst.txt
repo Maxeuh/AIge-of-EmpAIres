@@ -1,0 +1,40 @@
+model package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   model.buildings
+   model.player
+   model.resources
+   model.units
+
+Submodules
+----------
+
+model.entity module
+-------------------
+
+.. automodule:: model.entity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.game\_object module
+-------------------------
+
+.. automodule:: model.game_object
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: model
+   :members:
+   :undoc-members:
+   :show-inheritance:

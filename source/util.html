@@ -1,0 +1,1393 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>util package &mdash; AIge of EmpAIres  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="view package" href="view.html" />
+    <link rel="prev" title="test package" href="test.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            AIge of EmpAIres
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">AIge-of-EmpAIres</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="controller.html">controller package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">model package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">test package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">util package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-util.coordinate">util.coordinate module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#util.coordinate.Coordinate"><code class="docutils literal notranslate"><span class="pre">Coordinate</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-util.map">util.map module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#util.map.Map"><code class="docutils literal notranslate"><span class="pre">Map</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-util.settings">util.settings module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#util.settings.Settings"><code class="docutils literal notranslate"><span class="pre">Settings</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-util.state_manager">util.state_manager module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#util.state_manager.FPS"><code class="docutils literal notranslate"><span class="pre">FPS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#util.state_manager.GameState"><code class="docutils literal notranslate"><span class="pre">GameState</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#util.state_manager.MapSize"><code class="docutils literal notranslate"><span class="pre">MapSize</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#util.state_manager.MapType"><code class="docutils literal notranslate"><span class="pre">MapType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#util.state_manager.MenuOptions"><code class="docutils literal notranslate"><span class="pre">MenuOptions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#util.state_manager.StartingCondition"><code class="docutils literal notranslate"><span class="pre">StartingCondition</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-util">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view.html">view package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIge of EmpAIres</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">AIge-of-EmpAIres</a></li>
+      <li class="breadcrumb-item active">util package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/source/util.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="util-package">
+<h1>util package<a class="headerlink" href="#util-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-util.coordinate">
+<span id="util-coordinate-module"></span><h2>util.coordinate module<a class="headerlink" href="#module-util.coordinate" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.coordinate.</span></span><span class="sig-name descname"><span class="pre">Coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.coordinate.Coordinate" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Used to represent the coordinates of the tiles in the grid.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__abs__">
+<span class="sig-name descname"><span class="pre">__abs__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__abs__" title="Link to this definition"></a></dt>
+<dd><p>Absolute value of the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The absolute coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__add__">
+<span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__add__" title="Link to this definition"></a></dt>
+<dd><p>Addition of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__and__">
+<span class="sig-name descname"><span class="pre">__and__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__and__" title="Link to this definition"></a></dt>
+<dd><p>Bitwise and of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__eq__" title="Link to this definition"></a></dt>
+<dd><p>Equality check for the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<em>object</em>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the coordinates are equal, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__floordiv__">
+<span class="sig-name descname"><span class="pre">__floordiv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__floordiv__" title="Link to this definition"></a></dt>
+<dd><p>Floor division of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__ge__">
+<span class="sig-name descname"><span class="pre">__ge__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__ge__" title="Link to this definition"></a></dt>
+<dd><p>Greater than or equal to comparison between two coordinates. (Symbol: &gt;=)</p>
+<p>Is greater than or equal to all the coordinates where the following conditions are all true:
+- self.get_x() is greater than or equal to other.get_x()
+- self.get_y() is greater than or equal to other.get_y()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if self is greater than or equal to other, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__gt__">
+<span class="sig-name descname"><span class="pre">__gt__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__gt__" title="Link to this definition"></a></dt>
+<dd><p>Less than or equal to comparison between two coordinates. (Symbol: &lt;=)</p>
+<p>Is less than or equal to all the coordinates where the following conditions are all true:
+- self.get_x() is less than or equal to other.get_x()
+- self.get_y() is less than or equal to other.get_y()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if self is greater than other, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__hash__">
+<span class="sig-name descname"><span class="pre">__hash__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__hash__" title="Link to this definition"></a></dt>
+<dd><p>Hash for the coordinates to be used in dictionaries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The hash value.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.coordinate.Coordinate.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize a Coordinate object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – The x coordinate.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – The y coordinate.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__invert__">
+<span class="sig-name descname"><span class="pre">__invert__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__invert__" title="Link to this definition"></a></dt>
+<dd><p>Invert the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The inverted coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__le__">
+<span class="sig-name descname"><span class="pre">__le__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__le__" title="Link to this definition"></a></dt>
+<dd><p>Less than or equal to comparison between two coordinates. (Symbol: &lt;=)</p>
+<p>Is less than or equal to all the coordinates where the following conditions are all true:
+- self.get_x() is less than or equal to other.get_x()
+- self.get_y() is less than or equal to other.get_y()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if self is less than or equal to other, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__lshift__">
+<span class="sig-name descname"><span class="pre">__lshift__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__lshift__" title="Link to this definition"></a></dt>
+<dd><p>Left shift of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__lt__">
+<span class="sig-name descname"><span class="pre">__lt__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__lt__" title="Link to this definition"></a></dt>
+<dd><p>Less than comparison between two coordinates. (Symbol: &lt;)</p>
+<p>Is less than all the coordinates where the following conditions are all true:
+- self.get_x() is less than other.get_x()
+- self.get_y() is less than other.get_y()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if self is less than other, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__mod__">
+<span class="sig-name descname"><span class="pre">__mod__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__mod__" title="Link to this definition"></a></dt>
+<dd><p>Modulus of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__mul__">
+<span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__mul__" title="Link to this definition"></a></dt>
+<dd><p>Multiplication of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__neg__">
+<span class="sig-name descname"><span class="pre">__neg__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__neg__" title="Link to this definition"></a></dt>
+<dd><p>Negation of the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The negated coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__or__">
+<span class="sig-name descname"><span class="pre">__or__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__or__" title="Link to this definition"></a></dt>
+<dd><p>Bitwise or of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__pos__">
+<span class="sig-name descname"><span class="pre">__pos__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__pos__" title="Link to this definition"></a></dt>
+<dd><p>Positive of the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The positive coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__pow__">
+<span class="sig-name descname"><span class="pre">__pow__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__pow__" title="Link to this definition"></a></dt>
+<dd><p>Power of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Representation of the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The representation.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__rshift__">
+<span class="sig-name descname"><span class="pre">__rshift__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__rshift__" title="Link to this definition"></a></dt>
+<dd><p>Right shift of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__str__" title="Link to this definition"></a></dt>
+<dd><p>String representation of the coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The string representation.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__sub__">
+<span class="sig-name descname"><span class="pre">__sub__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__sub__" title="Link to this definition"></a></dt>
+<dd><p>Subtraction of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__truediv__">
+<span class="sig-name descname"><span class="pre">__truediv__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__truediv__" title="Link to this definition"></a></dt>
+<dd><p>Division of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.__xor__">
+<span class="sig-name descname"><span class="pre">__xor__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#util.coordinate.Coordinate.__xor__" title="Link to this definition"></a></dt>
+<dd><p>Bitwise xor of a coordinate with another coordinate or an integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a><em> or </em><em>int</em>) – The other coordinate or integer.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The resulting coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.distance">
+<span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.distance" title="Link to this definition"></a></dt>
+<dd><p>Calculate the Euclidean distance between two coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Euclidean distance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.get_x">
+<span class="sig-name descname"><span class="pre">get_x</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.get_x" title="Link to this definition"></a></dt>
+<dd><p>Getter method for the x coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The x coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.get_y">
+<span class="sig-name descname"><span class="pre">get_y</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.get_y" title="Link to this definition"></a></dt>
+<dd><p>Getter method for the y coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The y coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.is_adjacent">
+<span class="sig-name descname"><span class="pre">is_adjacent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.is_adjacent" title="Link to this definition"></a></dt>
+<dd><p>Check if two coordinates are adjacent (including diagonals).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the coordinates are adjacent, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.is_in_range">
+<span class="sig-name descname"><span class="pre">is_in_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.is_in_range" title="Link to this definition"></a></dt>
+<dd><p>Check if the distance between two coordinates is within a certain range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>other</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The other coordinate.</p></li>
+<li><p><strong>distance_range</strong> (<em>float</em>) – The distance range.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the distance is within the range, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.set_x">
+<span class="sig-name descname"><span class="pre">set_x</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.set_x" title="Link to this definition"></a></dt>
+<dd><p>Setter method for the x coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>int</em>) – The new x coordinate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.coordinate.Coordinate.set_y">
+<span class="sig-name descname"><span class="pre">set_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#util.coordinate.Coordinate.set_y" title="Link to this definition"></a></dt>
+<dd><p>Setter method for the y coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>y</strong> (<em>int</em>) – The new y coordinate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-util.map">
+<span id="util-map-module"></span><h2>util.map module<a class="headerlink" href="#module-util.map" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.map.Map">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.map.</span></span><span class="sig-name descname"><span class="pre">Map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.map.Map.DIRECTIONS">
+<span class="sig-name descname"><span class="pre">DIRECTIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[(-1,</span> <span class="pre">0),</span> <span class="pre">(1,</span> <span class="pre">0),</span> <span class="pre">(0,</span> <span class="pre">-1),</span> <span class="pre">(0,</span> <span class="pre">1),</span> <span class="pre">(-1,</span> <span class="pre">-1),</span> <span class="pre">(-1,</span> <span class="pre">1),</span> <span class="pre">(1,</span> <span class="pre">-1),</span> <span class="pre">(1,</span> <span class="pre">1)]</span></em><a class="headerlink" href="#util.map.Map.DIRECTIONS" title="Link to this definition"></a></dt>
+<dd><p>The Map class is used to represent the map of the game. It contains the matrix of the map and the methods associated with it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__force_add">
+<span class="sig-name descname"><span class="pre">__force_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.__force_add" title="Link to this definition"></a></dt>
+<dd><p>Forcefully add an entity at a certain coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> (<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><em>GameObject</em></a>) – The game object to be added.</p></li>
+<li><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate where the object is to be added.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__force_move">
+<span class="sig-name descname"><span class="pre">__force_move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.__force_move" title="Link to this definition"></a></dt>
+<dd><p>Forcefully move an entity to a new coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> (<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><em>GameObject</em></a>) – The game object to be moved.</p></li>
+<li><p><strong>new_coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate where the object is to be moved.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__force_remove">
+<span class="sig-name descname"><span class="pre">__force_remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></span><a class="headerlink" href="#util.map.Map.__force_remove" title="Link to this definition"></a></dt>
+<dd><p>Forcefully remove the entity at a certain coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate from which the object is to be removed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The removed game object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__getstate__">
+<span class="sig-name descname"><span class="pre">__getstate__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.__getstate__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.__init__" title="Link to this definition"></a></dt>
+<dd><p>Create a map with a certain size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – The size of the map.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#util.map.Map.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Get the string representation of the map for testing purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The string representation of the map.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__setstate__">
+<span class="sig-name descname"><span class="pre">__setstate__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.__setstate__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#util.map.Map.__str__" title="Link to this definition"></a></dt>
+<dd><p>Get the string representation of the map.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The matrix of the map as a string.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.add" title="Link to this definition"></a></dt>
+<dd><p>Add an entity at a certain coordinate. It also claims other tiles depending on the size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> (<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><em>GameObject</em></a>) – The game object to be added.</p></li>
+<li><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate where the object is to be added.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the object cannot be placed at the given coordinate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.capture">
+<span class="sig-name descname"><span class="pre">capture</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.map.Map" title="util.map.Map"><span class="pre">Map</span></a></span></span><a class="headerlink" href="#util.map.Map.capture" title="Link to this definition"></a></dt>
+<dd><p>Copy the map.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A copy of the map.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#util.map.Map" title="util.map.Map">Map</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.check_placement">
+<span class="sig-name descname"><span class="pre">check_placement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#util.map.Map.check_placement" title="Link to this definition"></a></dt>
+<dd><p>Check if an entity can be placed at a certain coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> (<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><em>GameObject</em></a>) – The game object to be placed.</p></li>
+<li><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate where the object is to be placed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the object can be placed, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.find_nearest_empty_zones">
+<span class="sig-name descname"><span class="pre">find_nearest_empty_zones</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.find_nearest_empty_zones" title="Link to this definition"></a></dt>
+<dd><p>Find the nearest empty zone to a given coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>size</strong> (<em>int</em>) – The size of the zone.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest empty coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.find_nearest_enemies">
+<span class="sig-name descname"><span class="pre">find_nearest_enemies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.find_nearest_enemies" title="Link to this definition"></a></dt>
+<dd><p>Find the nearest enemies to a given coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>player</strong> (<a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><em>Player</em></a>) – The player to find the nearest enemy of.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of coordinates of the nearest enemies.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.find_nearest_objects">
+<span class="sig-name descname"><span class="pre">find_nearest_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.find_nearest_objects" title="Link to this definition"></a></dt>
+<dd><p>Find the nearest object of the same type to a given coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>object_type</strong> (<em>type</em>) – The type of the object to find.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The list of coordinate of nearest objects of the same type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></span><a class="headerlink" href="#util.map.Map.get" title="Link to this definition"></a></dt>
+<dd><p>Get the entity at a certain coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate from which the object is to be retrieved.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The game object at the given coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get_from_to">
+<span class="sig-name descname"><span class="pre">get_from_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_coord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_coord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#util.map.Map" title="util.map.Map"><span class="pre">Map</span></a></span></span><a class="headerlink" href="#util.map.Map.get_from_to" title="Link to this definition"></a></dt>
+<dd><p>Get the map from a certain coordinate to another as a new Map with size based on the range between coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_coord</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>to_coord</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new map from the starting coordinate to the ending coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#util.map.Map" title="util.map.Map">Map</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get_map">
+<span class="sig-name descname"><span class="pre">get_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">defaultdict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.get_map" title="Link to this definition"></a></dt>
+<dd><p>Get the map as a matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The map as a matrix.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>defaultdict[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>, <a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get_map_from_to">
+<span class="sig-name descname"><span class="pre">get_map_from_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_coord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_coord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">defaultdict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.get_map_from_to" title="Link to this definition"></a></dt>
+<dd><p>Get the map from a certain coordinate to another as a matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_coord</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>to_coord</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A matrix from the starting coordinate to the ending coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>defaultdict[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>, <a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get_map_list">
+<span class="sig-name descname"><span class="pre">get_map_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.get_map_list" title="Link to this definition"></a></dt>
+<dd><p>Get the map as a list of lists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The map as a list of lists.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[list[<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get_map_list_from_to">
+<span class="sig-name descname"><span class="pre">get_map_list_from_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_coord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_coord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.get_map_list_from_to" title="Link to this definition"></a></dt>
+<dd><p>Get the map as a list of lists from a certain coordinate to another.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_coord</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>to_coord</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of lists from the starting coordinate to the ending coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[list[<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#util.map.Map.get_size" title="Link to this definition"></a></dt>
+<dd><p>Get the size of the map.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The size of the map.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.indicate_color">
+<span class="sig-name descname"><span class="pre">indicate_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#util.map.Map.indicate_color" title="Link to this definition"></a></dt>
+<dd><p>Get the color of the object coordinate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate to get the color of.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The color of the coordinate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.move">
+<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.map.Map.move" title="Link to this definition"></a></dt>
+<dd><p>Move an entity to a new adjacent coordinate (8 surrounding coordinates).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> (<a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><em>GameObject</em></a>) – The game object to be moved.</p></li>
+<li><p><strong>new_coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate where the object is to be moved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the new coordinate is not adjacent or not available.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.path_finding">
+<span class="sig-name descname"><span class="pre">path_finding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.path_finding" title="Link to this definition"></a></dt>
+<dd><p>Find the path for a unit to go from start to end.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>end</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of coordinates representing the path from start to end.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.path_finding_avoid">
+<span class="sig-name descname"><span class="pre">path_finding_avoid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">avoid_from</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">avoid_to</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.path_finding_avoid" title="Link to this definition"></a></dt>
+<dd><p>Find the path for a unit to go from start to end while avoiding a specific area.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>end</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate.</p></li>
+<li><p><strong>avoid_from</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate of the area to avoid.</p></li>
+<li><p><strong>avoid_to</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate of the area to avoid.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of coordinates representing the path from start to end while avoiding the specified area.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.path_finding_non_diagonal">
+<span class="sig-name descname"><span class="pre">path_finding_non_diagonal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#util.map.Map.path_finding_non_diagonal" title="Link to this definition"></a></dt>
+<dd><p>Find the path for a unit to go from start to end without diagonal movement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The starting coordinate.</p></li>
+<li><p><strong>end</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The ending coordinate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of coordinates representing the path from start to end without diagonal movement.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject"><span class="pre">GameObject</span></a></span></span><a class="headerlink" href="#util.map.Map.remove" title="Link to this definition"></a></dt>
+<dd><p>Remove the entity at a certain coordinate. It also removes other tiles depending on the size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The coordinate from which the object is to be removed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The removed game object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="model.html#model.game_object.GameObject" title="model.game_object.GameObject">GameObject</a></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the coordinate is out of bounds or there is no entity at the given coordinate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.map.Map.tabler_str">
+<span class="sig-name descname"><span class="pre">tabler_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#util.map.Map.tabler_str" title="Link to this definition"></a></dt>
+<dd><p>Get the string representation of the map in tabler format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The matrix of the map as a string in tabler format.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-util.settings">
+<span id="util-settings-module"></span><h2>util.settings module<a class="headerlink" href="#module-util.settings" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.settings.Settings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.settings.</span></span><span class="sig-name descname"><span class="pre">Settings</span></span><a class="headerlink" href="#util.settings.Settings" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Create a new Settings object with default values. It is used to store the game settings and allows the user to change them.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>map_type</strong> (<a class="reference internal" href="#util.state_manager.MapType" title="util.state_manager.MapType"><em>MapType</em></a>) – The type of the map.</p></li>
+<li><p><strong>map_size</strong> (<a class="reference internal" href="#util.state_manager.MapSize" title="util.state_manager.MapSize"><em>MapSize</em></a>) – The size of the map.</p></li>
+<li><p><strong>starting_condition</strong> (<a class="reference internal" href="#util.state_manager.StartingCondition" title="util.state_manager.StartingCondition"><em>StartingCondition</em></a>) – The starting condition of the game.</p></li>
+<li><p><strong>fps</strong> (<em>int</em>) – The frames per second setting.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="util.settings.Settings.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#util.settings.Settings.__init__" title="Link to this definition"></a></dt>
+<dd><p>Create a new Settings object with default values.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-util.state_manager">
+<span id="util-state-manager-module"></span><h2>util.state_manager module<a class="headerlink" href="#module-util.state_manager" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.state_manager.FPS">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.state_manager.</span></span><span class="sig-name descname"><span class="pre">FPS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.state_manager.FPS" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class representing the different frames per second options available in the game.</p>
+<p>This enum class defines the various frames per second options that can be selected from the game’s settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>FPS_15</strong> – Represents the option for 15 frames per second.</p></li>
+<li><p><strong>FPS_30</strong> – Represents the option for 30 frames per second.</p></li>
+<li><p><strong>FPS_60</strong> – Represents the option for 60 frames per second.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.FPS.FPS_15">
+<span class="sig-name descname"><span class="pre">FPS_15</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#util.state_manager.FPS.FPS_15" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.FPS.FPS_30">
+<span class="sig-name descname"><span class="pre">FPS_30</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#util.state_manager.FPS.FPS_30" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.FPS.FPS_60">
+<span class="sig-name descname"><span class="pre">FPS_60</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60</span></em><a class="headerlink" href="#util.state_manager.FPS.FPS_60" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="util.state_manager.GameState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.state_manager.</span></span><span class="sig-name descname"><span class="pre">GameState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.state_manager.GameState" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum representing the different states of the game.</p>
+<p>This Enum class defines the various states that the game can be in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>NOT_STARTED</strong> – The game has not started yet.</p></li>
+<li><p><strong>PLAYING</strong> – The game is currently being played.</p></li>
+<li><p><strong>PAUSED</strong> – The game is currently paused.</p></li>
+<li><p><strong>GAME_OVER</strong> – The game has ended.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.GameState.GAME_OVER">
+<span class="sig-name descname"><span class="pre">GAME_OVER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#util.state_manager.GameState.GAME_OVER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.GameState.NOT_STARTED">
+<span class="sig-name descname"><span class="pre">NOT_STARTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#util.state_manager.GameState.NOT_STARTED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.GameState.PAUSED">
+<span class="sig-name descname"><span class="pre">PAUSED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#util.state_manager.GameState.PAUSED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.GameState.PLAYING">
+<span class="sig-name descname"><span class="pre">PLAYING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#util.state_manager.GameState.PLAYING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="util.state_manager.MapSize">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.state_manager.</span></span><span class="sig-name descname"><span class="pre">MapSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.state_manager.MapSize" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum representing the different sizes of the map.</p>
+<p>This Enum class defines the various sizes that the map can be.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>SMALL</strong> – Represents the small map size of 120x120.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MapSize.LARGE">
+<span class="sig-name descname"><span class="pre">LARGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">480</span></em><a class="headerlink" href="#util.state_manager.MapSize.LARGE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MapSize.MEDIUM">
+<span class="sig-name descname"><span class="pre">MEDIUM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">240</span></em><a class="headerlink" href="#util.state_manager.MapSize.MEDIUM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MapSize.SMALL">
+<span class="sig-name descname"><span class="pre">SMALL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">120</span></em><a class="headerlink" href="#util.state_manager.MapSize.SMALL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="util.state_manager.MapType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.state_manager.</span></span><span class="sig-name descname"><span class="pre">MapType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.state_manager.MapType" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum representing the different types of maps that can be generated.</p>
+<p>This Enum class defines the various types of maps that can be generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>RICH</strong> – Represents the map type with generous resources dotted across the map.</p></li>
+<li><p><strong>GOLD_CENTER</strong> – Represents the map type with all the gold at the centre of the map.</p></li>
+<li><p><strong>TEST</strong> – Represents the map type for testing purposes.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MapType.GOLD_CENTER">
+<span class="sig-name descname"><span class="pre">GOLD_CENTER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#util.state_manager.MapType.GOLD_CENTER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MapType.RICH">
+<span class="sig-name descname"><span class="pre">RICH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#util.state_manager.MapType.RICH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MapType.TEST">
+<span class="sig-name descname"><span class="pre">TEST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#util.state_manager.MapType.TEST" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.state_manager.</span></span><span class="sig-name descname"><span class="pre">MenuOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.state_manager.MenuOptions" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class representing the different menu options available in the game.</p>
+<p>This enum class defines the various options that can be selected from the game’s menu.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>EXIT</strong> – Represents the option to exit the game.</p></li>
+<li><p><strong>SETTINGS</strong> – Represents the option to open the settings menu.</p></li>
+<li><p><strong>START_GAME</strong> – Represents the option to start a new game.</p></li>
+<li><p><strong>RESUME</strong> – Represents the option to resume the current game.</p></li>
+<li><p><strong>RESTART</strong> – Represents the option to restart the current game.</p></li>
+<li><p><strong>LOAD_GAME</strong> – Represents the option to load a previously saved game.</p></li>
+<li><p><strong>SAVE_GAME</strong> – Represents the option to save the current game.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.EXIT">
+<span class="sig-name descname"><span class="pre">EXIT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.EXIT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.LOAD_GAME">
+<span class="sig-name descname"><span class="pre">LOAD_GAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.LOAD_GAME" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.RESTART">
+<span class="sig-name descname"><span class="pre">RESTART</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.RESTART" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.RESUME">
+<span class="sig-name descname"><span class="pre">RESUME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.RESUME" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.SAVE_GAME">
+<span class="sig-name descname"><span class="pre">SAVE_GAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.SAVE_GAME" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.SETTINGS">
+<span class="sig-name descname"><span class="pre">SETTINGS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.SETTINGS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.MenuOptions.START_GAME">
+<span class="sig-name descname"><span class="pre">START_GAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#util.state_manager.MenuOptions.START_GAME" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="util.state_manager.StartingCondition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">util.state_manager.</span></span><span class="sig-name descname"><span class="pre">StartingCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.state_manager.StartingCondition" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum representing the different starting conditions of the game.</p>
+<p>This Enum class defines the various starting conditions that the game can be in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>LEAN</strong> – Represents the starting condition with lean resources:
+- 50F, 200W, 50G
+- Town Centre, 3 Villagers</p></li>
+<li><p><strong>MEAN</strong> – Represents the starting condition with mean resources:
+- 2000(F,W,G)
+- Town Centre, 3 Villagers</p></li>
+<li><p><strong>MARINES</strong> – Represents the starting condition with marines resources:
+- 20000(F,W,G)
+- 3 Town Centres, 15 Villagers, 2 (Barracks, Stable, Archery Range)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.StartingCondition.LEAN">
+<span class="sig-name descname"><span class="pre">LEAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#util.state_manager.StartingCondition.LEAN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="util.state_manager.StartingCondition.MEAN">
+<span class="sig-name descname"><span class="pre">MEAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#util.state_manager.StartingCondition.MEAN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-util">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-util" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="test.html" class="btn btn-neutral float-left" title="test package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="view.html" class="btn btn-neutral float-right" title="view package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025 - INSA Centre Val de Loire.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

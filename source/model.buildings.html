@@ -1,0 +1,1702 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>model.buildings package &mdash; AIge of EmpAIres  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="model.player package" href="model.player.html" />
+    <link rel="prev" title="model package" href="model.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            AIge of EmpAIres
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">AIge-of-EmpAIres</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="controller.html">controller package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="model.html">model package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="model.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">model.buildings package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.player.html">model.player package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html">model.resources package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html">model.units package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="model.html#module-model.entity">model.entity module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="model.html#module-model.game_object">model.game_object module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="model.html#module-model">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">test package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">util package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view.html">view package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIge of EmpAIres</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">AIge-of-EmpAIres</a></li>
+          <li class="breadcrumb-item"><a href="model.html">model package</a></li>
+      <li class="breadcrumb-item active">model.buildings package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/source/model.buildings.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="model-buildings-package">
+<h1>model.buildings package<a class="headerlink" href="#model-buildings-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-model.buildings.barracks">
+<span id="model-buildings-barracks-module"></span><h2>model.buildings.barracks module<a class="headerlink" href="#module-model.buildings.barracks" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">model.buildings.barracks.</span></span><span class="sig-name descname"><span class="pre">Barracks</span></span><a class="headerlink" href="#model.buildings.barracks.Barracks" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#model.buildings.building.Building" title="model.buildings.building.Building"><code class="xref py py-class docutils literal notranslate"><span class="pre">Building</span></code></a></p>
+<p>This class represents the Barracks building.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize a Barracks object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.barracks.Barracks.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.damage">
+<span class="sig-name descname"><span class="pre">damage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.damage" title="Link to this definition"></a></dt>
+<dd><p>Inflicts damage to the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>damage</strong> (<em>int</em>) – The amount of damage to inflict.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If damage is negative or the entity is already dead.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_coordinate">
+<span class="sig-name descname"><span class="pre">get_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Returns the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The coordinate of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_cost">
+<span class="sig-name descname"><span class="pre">get_cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_cost" title="Link to this definition"></a></dt>
+<dd><p>Returns the cost of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The cost of the entity in resources.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[‘Resource’, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_hp">
+<span class="sig-name descname"><span class="pre">get_hp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_hp" title="Link to this definition"></a></dt>
+<dd><p>Returns the health points of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The health points of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_letter">
+<span class="sig-name descname"><span class="pre">get_letter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_letter" title="Link to this definition"></a></dt>
+<dd><p>Returns the letter of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The letter of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_name" title="Link to this definition"></a></dt>
+<dd><p>Returns the name of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_player">
+<span class="sig-name descname"><span class="pre">get_player</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_player" title="Link to this definition"></a></dt>
+<dd><p>Returns the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The player associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_size" title="Link to this definition"></a></dt>
+<dd><p>Returns the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The size of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_spawning_time">
+<span class="sig-name descname"><span class="pre">get_spawning_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_spawning_time" title="Link to this definition"></a></dt>
+<dd><p>Returns the spawning time of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The spawning time of the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_sprite_path">
+<span class="sig-name descname"><span class="pre">get_sprite_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Returns the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The path to the sprite of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.get_task">
+<span class="sig-name descname"><span class="pre">get_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.get_task" title="Link to this definition"></a></dt>
+<dd><p>Returns the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The task associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task">Task</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.is_alive">
+<span class="sig-name descname"><span class="pre">is_alive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.is_alive" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the object is alive, False otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the object is alive, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.is_population_increase">
+<span class="sig-name descname"><span class="pre">is_population_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.is_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building increases the population.
+:return: True if the building increases the population, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.is_resources_drop_point">
+<span class="sig-name descname"><span class="pre">is_resources_drop_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.is_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building is a resources drop point.
+:return: True if the building is a resources drop point, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_alive">
+<span class="sig-name descname"><span class="pre">set_alive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_alive" title="Link to this definition"></a></dt>
+<dd><p>Sets the alive status of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>alive</strong> (<em>bool</em>) – The new alive status of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_coordinate">
+<span class="sig-name descname"><span class="pre">set_coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Sets the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_player">
+<span class="sig-name descname"><span class="pre">set_player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_player" title="Link to this definition"></a></dt>
+<dd><p>Sets the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><em>Player</em></a>) – The player to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_population_increase">
+<span class="sig-name descname"><span class="pre">set_population_increase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">population_increase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building increases the population.
+:param population_increase: True if the building increases the population, False otherwise.
+:type population_increase: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_resources_drop_point">
+<span class="sig-name descname"><span class="pre">set_resources_drop_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_drop_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building is a resources drop point.
+:param resources_drop_point: True if the building is a resources drop point, False otherwise.
+:type resources_drop_point: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_size">
+<span class="sig-name descname"><span class="pre">set_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_size" title="Link to this definition"></a></dt>
+<dd><p>Sets the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – The new size of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_sprite_path">
+<span class="sig-name descname"><span class="pre">set_sprite_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Sets the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – The new path to the sprite of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.barracks.Barracks.set_task">
+<span class="sig-name descname"><span class="pre">set_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.barracks.Barracks.set_task" title="Link to this definition"></a></dt>
+<dd><p>Sets the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> (<a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><em>Task</em></a>) – The task to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-model.buildings.building">
+<span id="model-buildings-building-module"></span><h2>model.buildings.building module<a class="headerlink" href="#module-model.buildings.building" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="model.buildings.building.Building">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">model.buildings.building.</span></span><span class="sig-name descname"><span class="pre">Building</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spawning_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.building.Building" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="model.html#model.entity.Entity" title="model.entity.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code></a></p>
+<p>This class represents the buildings on the map.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spawning_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.building.Building.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initializes the building.
+:param name: The name of the building.
+:type name: str
+:param letter: The letter representing the building.
+:type letter: str
+:param hp: The hit points of the building.
+:type hp: int
+:param cost: The cost to build the building.
+:type cost: dict[‘Resource’, int]
+:param size: The size of the building.
+:type size: int
+:param spawning_time: The time it takes to spawn the building.
+:type spawning_time: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.building.Building.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.building.Building.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.damage">
+<span class="sig-name descname"><span class="pre">damage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.damage" title="Link to this definition"></a></dt>
+<dd><p>Inflicts damage to the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>damage</strong> (<em>int</em>) – The amount of damage to inflict.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If damage is negative or the entity is already dead.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_coordinate">
+<span class="sig-name descname"><span class="pre">get_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#model.buildings.building.Building.get_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Returns the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The coordinate of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_cost">
+<span class="sig-name descname"><span class="pre">get_cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_cost" title="Link to this definition"></a></dt>
+<dd><p>Returns the cost of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The cost of the entity in resources.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[‘Resource’, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_hp">
+<span class="sig-name descname"><span class="pre">get_hp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_hp" title="Link to this definition"></a></dt>
+<dd><p>Returns the health points of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The health points of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_letter">
+<span class="sig-name descname"><span class="pre">get_letter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_letter" title="Link to this definition"></a></dt>
+<dd><p>Returns the letter of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The letter of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_name" title="Link to this definition"></a></dt>
+<dd><p>Returns the name of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_player">
+<span class="sig-name descname"><span class="pre">get_player</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></span><a class="headerlink" href="#model.buildings.building.Building.get_player" title="Link to this definition"></a></dt>
+<dd><p>Returns the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The player associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_size" title="Link to this definition"></a></dt>
+<dd><p>Returns the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The size of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_spawning_time">
+<span class="sig-name descname"><span class="pre">get_spawning_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_spawning_time" title="Link to this definition"></a></dt>
+<dd><p>Returns the spawning time of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The spawning time of the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_sprite_path">
+<span class="sig-name descname"><span class="pre">get_sprite_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.building.Building.get_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Returns the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The path to the sprite of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.get_task">
+<span class="sig-name descname"><span class="pre">get_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></span><a class="headerlink" href="#model.buildings.building.Building.get_task" title="Link to this definition"></a></dt>
+<dd><p>Returns the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The task associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task">Task</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.is_alive">
+<span class="sig-name descname"><span class="pre">is_alive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.building.Building.is_alive" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the object is alive, False otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the object is alive, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.is_population_increase">
+<span class="sig-name descname"><span class="pre">is_population_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.building.Building.is_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building increases the population.
+:return: True if the building increases the population, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.is_resources_drop_point">
+<span class="sig-name descname"><span class="pre">is_resources_drop_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.building.Building.is_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building is a resources drop point.
+:return: True if the building is a resources drop point, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_alive">
+<span class="sig-name descname"><span class="pre">set_alive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_alive" title="Link to this definition"></a></dt>
+<dd><p>Sets the alive status of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>alive</strong> (<em>bool</em>) – The new alive status of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_coordinate">
+<span class="sig-name descname"><span class="pre">set_coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Sets the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_player">
+<span class="sig-name descname"><span class="pre">set_player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_player" title="Link to this definition"></a></dt>
+<dd><p>Sets the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><em>Player</em></a>) – The player to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_population_increase">
+<span class="sig-name descname"><span class="pre">set_population_increase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">population_increase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building increases the population.
+:param population_increase: True if the building increases the population, False otherwise.
+:type population_increase: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_resources_drop_point">
+<span class="sig-name descname"><span class="pre">set_resources_drop_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_drop_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building is a resources drop point.
+:param resources_drop_point: True if the building is a resources drop point, False otherwise.
+:type resources_drop_point: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_size">
+<span class="sig-name descname"><span class="pre">set_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_size" title="Link to this definition"></a></dt>
+<dd><p>Sets the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – The new size of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_sprite_path">
+<span class="sig-name descname"><span class="pre">set_sprite_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Sets the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – The new path to the sprite of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.building.Building.set_task">
+<span class="sig-name descname"><span class="pre">set_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.building.Building.set_task" title="Link to this definition"></a></dt>
+<dd><p>Sets the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> (<a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><em>Task</em></a>) – The task to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-model.buildings.farm">
+<span id="model-buildings-farm-module"></span><h2>model.buildings.farm module<a class="headerlink" href="#module-model.buildings.farm" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">model.buildings.farm.</span></span><span class="sig-name descname"><span class="pre">Farm</span></span><a class="headerlink" href="#model.buildings.farm.Farm" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#model.buildings.building.Building" title="model.buildings.building.Building"><code class="xref py py-class docutils literal notranslate"><span class="pre">Building</span></code></a></p>
+<p>This class represents the Farm building.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize a Farm object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.farm.Farm.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.damage">
+<span class="sig-name descname"><span class="pre">damage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.damage" title="Link to this definition"></a></dt>
+<dd><p>Inflicts damage to the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>damage</strong> (<em>int</em>) – The amount of damage to inflict.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If damage is negative or the entity is already dead.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_coordinate">
+<span class="sig-name descname"><span class="pre">get_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Returns the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The coordinate of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_cost">
+<span class="sig-name descname"><span class="pre">get_cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_cost" title="Link to this definition"></a></dt>
+<dd><p>Returns the cost of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The cost of the entity in resources.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[‘Resource’, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_food">
+<span class="sig-name descname"><span class="pre">get_food</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.resources.html#model.resources.food.Food" title="model.resources.food.Food"><span class="pre">Food</span></a></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_food" title="Link to this definition"></a></dt>
+<dd><p>Returns the food object of the farm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The food object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="model.resources.html#model.resources.food.Food" title="model.resources.food.Food">Food</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_hp">
+<span class="sig-name descname"><span class="pre">get_hp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_hp" title="Link to this definition"></a></dt>
+<dd><p>Returns the health points of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The health points of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_letter">
+<span class="sig-name descname"><span class="pre">get_letter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_letter" title="Link to this definition"></a></dt>
+<dd><p>Returns the letter of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The letter of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_name" title="Link to this definition"></a></dt>
+<dd><p>Returns the name of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_player">
+<span class="sig-name descname"><span class="pre">get_player</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_player" title="Link to this definition"></a></dt>
+<dd><p>Returns the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The player associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_size" title="Link to this definition"></a></dt>
+<dd><p>Returns the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The size of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_spawning_time">
+<span class="sig-name descname"><span class="pre">get_spawning_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_spawning_time" title="Link to this definition"></a></dt>
+<dd><p>Returns the spawning time of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The spawning time of the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_sprite_path">
+<span class="sig-name descname"><span class="pre">get_sprite_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Returns the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The path to the sprite of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.get_task">
+<span class="sig-name descname"><span class="pre">get_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></span><a class="headerlink" href="#model.buildings.farm.Farm.get_task" title="Link to this definition"></a></dt>
+<dd><p>Returns the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The task associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task">Task</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.is_alive">
+<span class="sig-name descname"><span class="pre">is_alive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.is_alive" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the object is alive, False otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the object is alive, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.is_population_increase">
+<span class="sig-name descname"><span class="pre">is_population_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.is_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building increases the population.
+:return: True if the building increases the population, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.is_resources_drop_point">
+<span class="sig-name descname"><span class="pre">is_resources_drop_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.is_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building is a resources drop point.
+:return: True if the building is a resources drop point, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_alive">
+<span class="sig-name descname"><span class="pre">set_alive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_alive" title="Link to this definition"></a></dt>
+<dd><p>Sets the alive status of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>alive</strong> (<em>bool</em>) – The new alive status of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_coordinate">
+<span class="sig-name descname"><span class="pre">set_coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Sets the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_player">
+<span class="sig-name descname"><span class="pre">set_player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_player" title="Link to this definition"></a></dt>
+<dd><p>Sets the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><em>Player</em></a>) – The player to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_population_increase">
+<span class="sig-name descname"><span class="pre">set_population_increase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">population_increase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building increases the population.
+:param population_increase: True if the building increases the population, False otherwise.
+:type population_increase: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_resources_drop_point">
+<span class="sig-name descname"><span class="pre">set_resources_drop_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_drop_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building is a resources drop point.
+:param resources_drop_point: True if the building is a resources drop point, False otherwise.
+:type resources_drop_point: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_size">
+<span class="sig-name descname"><span class="pre">set_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_size" title="Link to this definition"></a></dt>
+<dd><p>Sets the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – The new size of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_sprite_path">
+<span class="sig-name descname"><span class="pre">set_sprite_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Sets the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – The new path to the sprite of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.farm.Farm.set_task">
+<span class="sig-name descname"><span class="pre">set_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.farm.Farm.set_task" title="Link to this definition"></a></dt>
+<dd><p>Sets the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> (<a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><em>Task</em></a>) – The task to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-model.buildings.house">
+<span id="model-buildings-house-module"></span><h2>model.buildings.house module<a class="headerlink" href="#module-model.buildings.house" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="model.buildings.house.House">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">model.buildings.house.</span></span><span class="sig-name descname"><span class="pre">House</span></span><a class="headerlink" href="#model.buildings.house.House" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#model.buildings.building.Building" title="model.buildings.building.Building"><code class="xref py py-class docutils literal notranslate"><span class="pre">Building</span></code></a></p>
+<p>This class represents the House building.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize a House object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.house.House.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.house.House.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.damage">
+<span class="sig-name descname"><span class="pre">damage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.damage" title="Link to this definition"></a></dt>
+<dd><p>Inflicts damage to the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>damage</strong> (<em>int</em>) – The amount of damage to inflict.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If damage is negative or the entity is already dead.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_capacity_increase">
+<span class="sig-name descname"><span class="pre">get_capacity_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_capacity_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns the population capacity increase of the town center.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The population capacity increase.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_coordinate">
+<span class="sig-name descname"><span class="pre">get_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#model.buildings.house.House.get_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Returns the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The coordinate of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_cost">
+<span class="sig-name descname"><span class="pre">get_cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#model.buildings.house.House.get_cost" title="Link to this definition"></a></dt>
+<dd><p>Returns the cost of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The cost of the entity in resources.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[‘Resource’, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_hp">
+<span class="sig-name descname"><span class="pre">get_hp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_hp" title="Link to this definition"></a></dt>
+<dd><p>Returns the health points of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The health points of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_letter">
+<span class="sig-name descname"><span class="pre">get_letter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_letter" title="Link to this definition"></a></dt>
+<dd><p>Returns the letter of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The letter of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_name" title="Link to this definition"></a></dt>
+<dd><p>Returns the name of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_player">
+<span class="sig-name descname"><span class="pre">get_player</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></span><a class="headerlink" href="#model.buildings.house.House.get_player" title="Link to this definition"></a></dt>
+<dd><p>Returns the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The player associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_size" title="Link to this definition"></a></dt>
+<dd><p>Returns the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The size of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_spawning_time">
+<span class="sig-name descname"><span class="pre">get_spawning_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_spawning_time" title="Link to this definition"></a></dt>
+<dd><p>Returns the spawning time of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The spawning time of the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_sprite_path">
+<span class="sig-name descname"><span class="pre">get_sprite_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.house.House.get_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Returns the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The path to the sprite of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.get_task">
+<span class="sig-name descname"><span class="pre">get_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></span><a class="headerlink" href="#model.buildings.house.House.get_task" title="Link to this definition"></a></dt>
+<dd><p>Returns the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The task associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task">Task</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.is_alive">
+<span class="sig-name descname"><span class="pre">is_alive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.house.House.is_alive" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the object is alive, False otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the object is alive, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.is_population_increase">
+<span class="sig-name descname"><span class="pre">is_population_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.house.House.is_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building increases the population.
+:return: True if the building increases the population, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.is_resources_drop_point">
+<span class="sig-name descname"><span class="pre">is_resources_drop_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.house.House.is_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building is a resources drop point.
+:return: True if the building is a resources drop point, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_alive">
+<span class="sig-name descname"><span class="pre">set_alive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_alive" title="Link to this definition"></a></dt>
+<dd><p>Sets the alive status of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>alive</strong> (<em>bool</em>) – The new alive status of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_coordinate">
+<span class="sig-name descname"><span class="pre">set_coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Sets the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_player">
+<span class="sig-name descname"><span class="pre">set_player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_player" title="Link to this definition"></a></dt>
+<dd><p>Sets the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><em>Player</em></a>) – The player to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_population_increase">
+<span class="sig-name descname"><span class="pre">set_population_increase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">population_increase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building increases the population.
+:param population_increase: True if the building increases the population, False otherwise.
+:type population_increase: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_resources_drop_point">
+<span class="sig-name descname"><span class="pre">set_resources_drop_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_drop_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building is a resources drop point.
+:param resources_drop_point: True if the building is a resources drop point, False otherwise.
+:type resources_drop_point: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_size">
+<span class="sig-name descname"><span class="pre">set_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_size" title="Link to this definition"></a></dt>
+<dd><p>Sets the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – The new size of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_sprite_path">
+<span class="sig-name descname"><span class="pre">set_sprite_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Sets the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – The new path to the sprite of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.house.House.set_task">
+<span class="sig-name descname"><span class="pre">set_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.house.House.set_task" title="Link to this definition"></a></dt>
+<dd><p>Sets the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> (<a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><em>Task</em></a>) – The task to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-model.buildings.town_center">
+<span id="model-buildings-town-center-module"></span><h2>model.buildings.town_center module<a class="headerlink" href="#module-model.buildings.town_center" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">model.buildings.town_center.</span></span><span class="sig-name descname"><span class="pre">TownCenter</span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#model.buildings.building.Building" title="model.buildings.building.Building"><code class="xref py py-class docutils literal notranslate"><span class="pre">Building</span></code></a></p>
+<p>This class represents the Town Center building.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize a TownCenter object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model.buildings.town_center.TownCenter.__repr__" title="Link to this definition"></a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.__str__" title="Link to this definition"></a></dt>
+<dd><p>Returns a string representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.damage">
+<span class="sig-name descname"><span class="pre">damage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.damage" title="Link to this definition"></a></dt>
+<dd><p>Inflicts damage to the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>damage</strong> (<em>int</em>) – The amount of damage to inflict.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If damage is negative or the entity is already dead.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_capacity_increase">
+<span class="sig-name descname"><span class="pre">get_capacity_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_capacity_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns the population capacity increase of the town center.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The population capacity increase.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_coordinate">
+<span class="sig-name descname"><span class="pre">get_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Returns the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The coordinate of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate">Coordinate</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_cost">
+<span class="sig-name descname"><span class="pre">get_cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="model.resources.html#model.resources.resource.Resource" title="model.resources.resource.Resource"><span class="pre">Resource</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_cost" title="Link to this definition"></a></dt>
+<dd><p>Returns the cost of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The cost of the entity in resources.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[‘Resource’, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_hp">
+<span class="sig-name descname"><span class="pre">get_hp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_hp" title="Link to this definition"></a></dt>
+<dd><p>Returns the health points of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The health points of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_letter">
+<span class="sig-name descname"><span class="pre">get_letter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_letter" title="Link to this definition"></a></dt>
+<dd><p>Returns the letter of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The letter of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_name" title="Link to this definition"></a></dt>
+<dd><p>Returns the name of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_player">
+<span class="sig-name descname"><span class="pre">get_player</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_player" title="Link to this definition"></a></dt>
+<dd><p>Returns the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The player associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_size">
+<span class="sig-name descname"><span class="pre">get_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_size" title="Link to this definition"></a></dt>
+<dd><p>Returns the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The size of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_spawning_time">
+<span class="sig-name descname"><span class="pre">get_spawning_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_spawning_time" title="Link to this definition"></a></dt>
+<dd><p>Returns the spawning time of the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The spawning time of the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_sprite_path">
+<span class="sig-name descname"><span class="pre">get_sprite_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Returns the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The path to the sprite of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.get_task">
+<span class="sig-name descname"><span class="pre">get_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.get_task" title="Link to this definition"></a></dt>
+<dd><p>Returns the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The task associated with the entity.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task">Task</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.is_alive">
+<span class="sig-name descname"><span class="pre">is_alive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.is_alive" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the object is alive, False otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the object is alive, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.is_population_increase">
+<span class="sig-name descname"><span class="pre">is_population_increase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.is_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building increases the population.
+:return: True if the building increases the population, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.is_resources_drop_point">
+<span class="sig-name descname"><span class="pre">is_resources_drop_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.is_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Returns whether or not the building is a resources drop point.
+:return: True if the building is a resources drop point, False otherwise.
+:rtype: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_alive">
+<span class="sig-name descname"><span class="pre">set_alive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_alive" title="Link to this definition"></a></dt>
+<dd><p>Sets the alive status of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>alive</strong> (<em>bool</em>) – The new alive status of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_coordinate">
+<span class="sig-name descname"><span class="pre">set_coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><span class="pre">Coordinate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_coordinate" title="Link to this definition"></a></dt>
+<dd><p>Sets the coordinate of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>coordinate</strong> (<a class="reference internal" href="util.html#util.coordinate.Coordinate" title="util.coordinate.Coordinate"><em>Coordinate</em></a>) – The new coordinate of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_player">
+<span class="sig-name descname"><span class="pre">set_player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_player" title="Link to this definition"></a></dt>
+<dd><p>Sets the player associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="model.player.html#model.player.player.Player" title="model.player.player.Player"><em>Player</em></a>) – The player to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_population_increase">
+<span class="sig-name descname"><span class="pre">set_population_increase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">population_increase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_population_increase" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building increases the population.
+:param population_increase: True if the building increases the population, False otherwise.
+:type population_increase: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_resources_drop_point">
+<span class="sig-name descname"><span class="pre">set_resources_drop_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_drop_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_resources_drop_point" title="Link to this definition"></a></dt>
+<dd><p>Sets whether or not the building is a resources drop point.
+:param resources_drop_point: True if the building is a resources drop point, False otherwise.
+:type resources_drop_point: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_size">
+<span class="sig-name descname"><span class="pre">set_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_size" title="Link to this definition"></a></dt>
+<dd><p>Sets the size of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – The new size of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_sprite_path">
+<span class="sig-name descname"><span class="pre">set_sprite_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_sprite_path" title="Link to this definition"></a></dt>
+<dd><p>Sets the path to the sprite of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – The new path to the sprite of the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="model.buildings.town_center.TownCenter.set_task">
+<span class="sig-name descname"><span class="pre">set_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><span class="pre">Task</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#model.buildings.town_center.TownCenter.set_task" title="Link to this definition"></a></dt>
+<dd><p>Sets the task associated with the entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> (<a class="reference internal" href="controller.html#controller.command.Task" title="controller.command.Task"><em>Task</em></a>) – The task to associate with the entity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-model.buildings">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-model.buildings" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="model.html" class="btn btn-neutral float-left" title="model package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="model.player.html" class="btn btn-neutral float-right" title="model.player package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025 - INSA Centre Val de Loire.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

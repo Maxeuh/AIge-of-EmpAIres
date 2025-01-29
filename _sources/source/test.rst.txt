@@ -1,0 +1,29 @@
+test package
+============
+
+Submodules
+----------
+
+test.test\_coordinate module
+----------------------------
+
+.. automodule:: test.test_coordinate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+test.test\_map module
+---------------------
+
+.. automodule:: test.test_map
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: test
+   :members:
+   :undoc-members:
+   :show-inheritance:

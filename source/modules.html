@@ -1,0 +1,990 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIge-of-EmpAIres &mdash; AIge of EmpAIres  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="controller package" href="controller.html" />
+    <link rel="prev" title="AIge of EmpAIres documentation" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            AIge of EmpAIres
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AIge-of-EmpAIres</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="controller.html">controller package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">model package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">test package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="util.html">util package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view.html">view package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AIge of EmpAIres</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">AIge-of-EmpAIres</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/source/modules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="aige-of-empaires">
+<h1>AIge-of-EmpAIres<a class="headerlink" href="#aige-of-empaires" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="controller.html">controller package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#controller-ai-controller-module">controller.AI_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#module-controller.command">controller.command module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.AttackCommand"><code class="docutils literal notranslate"><span class="pre">AttackCommand</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.__init__"><code class="docutils literal notranslate"><span class="pre">AttackCommand.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.__repr__"><code class="docutils literal notranslate"><span class="pre">AttackCommand.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.__slots__"><code class="docutils literal notranslate"><span class="pre">AttackCommand.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand._abc_impl"><code class="docutils literal notranslate"><span class="pre">AttackCommand._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_entity"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_interactions"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_player"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_process"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_tick"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.get_time"><code class="docutils literal notranslate"><span class="pre">AttackCommand.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">AttackCommand.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">AttackCommand.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.run_command"><code class="docutils literal notranslate"><span class="pre">AttackCommand.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.set_tick"><code class="docutils literal notranslate"><span class="pre">AttackCommand.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.AttackCommand.set_time"><code class="docutils literal notranslate"><span class="pre">AttackCommand.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.BuildCommand"><code class="docutils literal notranslate"><span class="pre">BuildCommand</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.__init__"><code class="docutils literal notranslate"><span class="pre">BuildCommand.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.__repr__"><code class="docutils literal notranslate"><span class="pre">BuildCommand.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.__slots__"><code class="docutils literal notranslate"><span class="pre">BuildCommand.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand._abc_impl"><code class="docutils literal notranslate"><span class="pre">BuildCommand._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_entity"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_interactions"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_player"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_process"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_tick"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.get_time"><code class="docutils literal notranslate"><span class="pre">BuildCommand.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">BuildCommand.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">BuildCommand.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.run_command"><code class="docutils literal notranslate"><span class="pre">BuildCommand.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.set_tick"><code class="docutils literal notranslate"><span class="pre">BuildCommand.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildCommand.set_time"><code class="docutils literal notranslate"><span class="pre">BuildCommand.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.BuildTask"><code class="docutils literal notranslate"><span class="pre">BuildTask</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.__init__"><code class="docutils literal notranslate"><span class="pre">BuildTask.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.__repr__"><code class="docutils literal notranslate"><span class="pre">BuildTask.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.__slots__"><code class="docutils literal notranslate"><span class="pre">BuildTask.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask._abc_impl"><code class="docutils literal notranslate"><span class="pre">BuildTask._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.execute_task"><code class="docutils literal notranslate"><span class="pre">BuildTask.execute_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.get_command_manager"><code class="docutils literal notranslate"><span class="pre">BuildTask.get_command_manager()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.get_entity"><code class="docutils literal notranslate"><span class="pre">BuildTask.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.get_name"><code class="docutils literal notranslate"><span class="pre">BuildTask.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.get_target_coord"><code class="docutils literal notranslate"><span class="pre">BuildTask.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.get_waiting"><code class="docutils literal notranslate"><span class="pre">BuildTask.get_waiting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.BuildTask.set_waiting"><code class="docutils literal notranslate"><span class="pre">BuildTask.set_waiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.__init__"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.__repr__"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.__slots__"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask._abc_impl"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.calculate_path"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.calculate_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.calculate_way_back"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.calculate_way_back()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.execute_task"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.execute_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.get_command_manager"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.get_command_manager()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.get_entity"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.get_name"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.get_target_coord"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.get_waiting"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.get_waiting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectAndDropTask.set_waiting"><code class="docutils literal notranslate"><span class="pre">CollectAndDropTask.set_waiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.CollectCommand"><code class="docutils literal notranslate"><span class="pre">CollectCommand</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.__init__"><code class="docutils literal notranslate"><span class="pre">CollectCommand.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.__repr__"><code class="docutils literal notranslate"><span class="pre">CollectCommand.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.__slots__"><code class="docutils literal notranslate"><span class="pre">CollectCommand.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand._abc_impl"><code class="docutils literal notranslate"><span class="pre">CollectCommand._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_entity"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_interactions"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_player"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_process"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_tick"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.get_time"><code class="docutils literal notranslate"><span class="pre">CollectCommand.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">CollectCommand.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">CollectCommand.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.run_command"><code class="docutils literal notranslate"><span class="pre">CollectCommand.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.set_tick"><code class="docutils literal notranslate"><span class="pre">CollectCommand.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CollectCommand.set_time"><code class="docutils literal notranslate"><span class="pre">CollectCommand.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.Command"><code class="docutils literal notranslate"><span class="pre">Command</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.__init__"><code class="docutils literal notranslate"><span class="pre">Command.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.__repr__"><code class="docutils literal notranslate"><span class="pre">Command.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.__slots__"><code class="docutils literal notranslate"><span class="pre">Command.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command._abc_impl"><code class="docutils literal notranslate"><span class="pre">Command._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">Command.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_entity"><code class="docutils literal notranslate"><span class="pre">Command.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_interactions"><code class="docutils literal notranslate"><span class="pre">Command.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_player"><code class="docutils literal notranslate"><span class="pre">Command.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_process"><code class="docutils literal notranslate"><span class="pre">Command.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_tick"><code class="docutils literal notranslate"><span class="pre">Command.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.get_time"><code class="docutils literal notranslate"><span class="pre">Command.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">Command.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">Command.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.run_command"><code class="docutils literal notranslate"><span class="pre">Command.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.set_tick"><code class="docutils literal notranslate"><span class="pre">Command.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Command.set_time"><code class="docutils literal notranslate"><span class="pre">Command.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.CommandManager"><code class="docutils literal notranslate"><span class="pre">CommandManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CommandManager.__init__"><code class="docutils literal notranslate"><span class="pre">CommandManager.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CommandManager.command"><code class="docutils literal notranslate"><span class="pre">CommandManager.command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CommandManager.get_command_list"><code class="docutils literal notranslate"><span class="pre">CommandManager.get_command_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CommandManager.get_map"><code class="docutils literal notranslate"><span class="pre">CommandManager.get_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.CommandManager.get_player"><code class="docutils literal notranslate"><span class="pre">CommandManager.get_player()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.DropCommand"><code class="docutils literal notranslate"><span class="pre">DropCommand</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__convert_coeff"><code class="docutils literal notranslate"><span class="pre">DropCommand.__convert_coeff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__entity"><code class="docutils literal notranslate"><span class="pre">DropCommand.__entity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__init__"><code class="docutils literal notranslate"><span class="pre">DropCommand.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__interactions"><code class="docutils literal notranslate"><span class="pre">DropCommand.__interactions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__player"><code class="docutils literal notranslate"><span class="pre">DropCommand.__player</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__process"><code class="docutils literal notranslate"><span class="pre">DropCommand.__process</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__repr__"><code class="docutils literal notranslate"><span class="pre">DropCommand.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__slots__"><code class="docutils literal notranslate"><span class="pre">DropCommand.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__tick"><code class="docutils literal notranslate"><span class="pre">DropCommand.__tick</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.__time"><code class="docutils literal notranslate"><span class="pre">DropCommand.__time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand._abc_impl"><code class="docutils literal notranslate"><span class="pre">DropCommand._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_entity"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_interactions"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_player"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_process"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_tick"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.get_time"><code class="docutils literal notranslate"><span class="pre">DropCommand.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">DropCommand.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">DropCommand.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.run_command"><code class="docutils literal notranslate"><span class="pre">DropCommand.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.set_tick"><code class="docutils literal notranslate"><span class="pre">DropCommand.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.DropCommand.set_time"><code class="docutils literal notranslate"><span class="pre">DropCommand.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.KillTask"><code class="docutils literal notranslate"><span class="pre">KillTask</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.__init__"><code class="docutils literal notranslate"><span class="pre">KillTask.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.__repr__"><code class="docutils literal notranslate"><span class="pre">KillTask.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.__slots__"><code class="docutils literal notranslate"><span class="pre">KillTask.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask._abc_impl"><code class="docutils literal notranslate"><span class="pre">KillTask._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.execute_task"><code class="docutils literal notranslate"><span class="pre">KillTask.execute_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.get_command_manager"><code class="docutils literal notranslate"><span class="pre">KillTask.get_command_manager()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.get_entity"><code class="docutils literal notranslate"><span class="pre">KillTask.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.get_name"><code class="docutils literal notranslate"><span class="pre">KillTask.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.get_target_coord"><code class="docutils literal notranslate"><span class="pre">KillTask.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.get_waiting"><code class="docutils literal notranslate"><span class="pre">KillTask.get_waiting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.KillTask.set_waiting"><code class="docutils literal notranslate"><span class="pre">KillTask.set_waiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.MoveCommand"><code class="docutils literal notranslate"><span class="pre">MoveCommand</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__convert_coeff"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__convert_coeff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__entity"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__entity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__init__"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__interactions"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__interactions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__player"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__player</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__process"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__process</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__repr__"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__slots__"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__tick"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__tick</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.__time"><code class="docutils literal notranslate"><span class="pre">MoveCommand.__time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand._abc_impl"><code class="docutils literal notranslate"><span class="pre">MoveCommand._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_entity"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_interactions"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_player"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_process"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_tick"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.get_time"><code class="docutils literal notranslate"><span class="pre">MoveCommand.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">MoveCommand.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">MoveCommand.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.run_command"><code class="docutils literal notranslate"><span class="pre">MoveCommand.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.set_tick"><code class="docutils literal notranslate"><span class="pre">MoveCommand.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveCommand.set_time"><code class="docutils literal notranslate"><span class="pre">MoveCommand.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.MoveTask"><code class="docutils literal notranslate"><span class="pre">MoveTask</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.__init__"><code class="docutils literal notranslate"><span class="pre">MoveTask.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.__repr__"><code class="docutils literal notranslate"><span class="pre">MoveTask.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.__slots__"><code class="docutils literal notranslate"><span class="pre">MoveTask.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask._abc_impl"><code class="docutils literal notranslate"><span class="pre">MoveTask._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.execute_task"><code class="docutils literal notranslate"><span class="pre">MoveTask.execute_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.get_command_manager"><code class="docutils literal notranslate"><span class="pre">MoveTask.get_command_manager()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.get_entity"><code class="docutils literal notranslate"><span class="pre">MoveTask.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.get_name"><code class="docutils literal notranslate"><span class="pre">MoveTask.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.get_target_coord"><code class="docutils literal notranslate"><span class="pre">MoveTask.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.get_waiting"><code class="docutils literal notranslate"><span class="pre">MoveTask.get_waiting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.MoveTask.set_waiting"><code class="docutils literal notranslate"><span class="pre">MoveTask.set_waiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.Process"><code class="docutils literal notranslate"><span class="pre">Process</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Process.ATTACK"><code class="docutils literal notranslate"><span class="pre">Process.ATTACK</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Process.BUILD"><code class="docutils literal notranslate"><span class="pre">Process.BUILD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Process.COLLECT"><code class="docutils literal notranslate"><span class="pre">Process.COLLECT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Process.DROP"><code class="docutils literal notranslate"><span class="pre">Process.DROP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Process.MOVE"><code class="docutils literal notranslate"><span class="pre">Process.MOVE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Process.SPAWN"><code class="docutils literal notranslate"><span class="pre">Process.SPAWN</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.SpawnCommand"><code class="docutils literal notranslate"><span class="pre">SpawnCommand</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__convert_coeff"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__convert_coeff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__entity"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__entity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__init__"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__interactions"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__interactions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__player"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__player</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__process"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__process</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__repr__"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__slots__"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__tick"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__tick</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.__time"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.__time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand._abc_impl"><code class="docutils literal notranslate"><span class="pre">SpawnCommand._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_convert_coeff"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_convert_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_entity"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_interactions"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_interactions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_player"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_process"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_target_coord"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_tick"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.get_time"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.get_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.push_command_to_list"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.push_command_to_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.remove_command_from_list"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.remove_command_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.run_command"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.run_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.set_tick"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.set_tick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnCommand.set_time"><code class="docutils literal notranslate"><span class="pre">SpawnCommand.set_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.SpawnTask"><code class="docutils literal notranslate"><span class="pre">SpawnTask</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.__init__"><code class="docutils literal notranslate"><span class="pre">SpawnTask.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.__repr__"><code class="docutils literal notranslate"><span class="pre">SpawnTask.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.__slots__"><code class="docutils literal notranslate"><span class="pre">SpawnTask.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask._abc_impl"><code class="docutils literal notranslate"><span class="pre">SpawnTask._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.execute_task"><code class="docutils literal notranslate"><span class="pre">SpawnTask.execute_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.get_command_manager"><code class="docutils literal notranslate"><span class="pre">SpawnTask.get_command_manager()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.get_entity"><code class="docutils literal notranslate"><span class="pre">SpawnTask.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.get_name"><code class="docutils literal notranslate"><span class="pre">SpawnTask.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.get_target_coord"><code class="docutils literal notranslate"><span class="pre">SpawnTask.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.get_waiting"><code class="docutils literal notranslate"><span class="pre">SpawnTask.get_waiting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.SpawnTask.set_waiting"><code class="docutils literal notranslate"><span class="pre">SpawnTask.set_waiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.Task"><code class="docutils literal notranslate"><span class="pre">Task</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.__init__"><code class="docutils literal notranslate"><span class="pre">Task.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.__repr__"><code class="docutils literal notranslate"><span class="pre">Task.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.__slots__"><code class="docutils literal notranslate"><span class="pre">Task.__slots__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task._abc_impl"><code class="docutils literal notranslate"><span class="pre">Task._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.execute_task"><code class="docutils literal notranslate"><span class="pre">Task.execute_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.get_command_manager"><code class="docutils literal notranslate"><span class="pre">Task.get_command_manager()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.get_entity"><code class="docutils literal notranslate"><span class="pre">Task.get_entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.get_name"><code class="docutils literal notranslate"><span class="pre">Task.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.get_target_coord"><code class="docutils literal notranslate"><span class="pre">Task.get_target_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.get_waiting"><code class="docutils literal notranslate"><span class="pre">Task.get_waiting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.Task.set_waiting"><code class="docutils literal notranslate"><span class="pre">Task.set_waiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.TaskManager"><code class="docutils literal notranslate"><span class="pre">TaskManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.TaskManager.__init__"><code class="docutils literal notranslate"><span class="pre">TaskManager.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.TaskManager.execute_tasks"><code class="docutils literal notranslate"><span class="pre">TaskManager.execute_tasks()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.command.UnitSpawner"><code class="docutils literal notranslate"><span class="pre">UnitSpawner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__class_getitem__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__class_getitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__contains__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__contains__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__delitem__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__delitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__eq__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__eq__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__ge__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__ge__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__getattribute__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__getattribute__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__getitem__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__getitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__gt__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__gt__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__hash__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__hash__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__init__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__ior__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__ior__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__iter__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__iter__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__le__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__le__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__len__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__len__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__lt__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__lt__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__ne__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__ne__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__new__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__new__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__or__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__or__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__orig_bases__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__orig_bases__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__repr__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__reversed__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__reversed__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__ror__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__ror__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__setitem__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__setitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.__sizeof__"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.__sizeof__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.clear"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.clear()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.copy"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.copy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.fromkeys"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.fromkeys()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.get"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.items"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.items()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.keys"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.keys()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.pop"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.pop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.popitem"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.popitem()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.setdefault"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.setdefault()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.update"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.update()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.command.UnitSpawner.values"><code class="docutils literal notranslate"><span class="pre">UnitSpawner.values()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#controller-game-controller-module">controller.game_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#module-controller.interactions">controller.interactions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.interactions.Interactions"><code class="docutils literal notranslate"><span class="pre">Interactions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.__init__"><code class="docutils literal notranslate"><span class="pre">Interactions.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.attack"><code class="docutils literal notranslate"><span class="pre">Interactions.attack()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.collect_resource"><code class="docutils literal notranslate"><span class="pre">Interactions.collect_resource()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.drop_resource"><code class="docutils literal notranslate"><span class="pre">Interactions.drop_resource()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.get_map"><code class="docutils literal notranslate"><span class="pre">Interactions.get_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.link_owner"><code class="docutils literal notranslate"><span class="pre">Interactions.link_owner()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.move_unit"><code class="docutils literal notranslate"><span class="pre">Interactions.move_unit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.place_object"><code class="docutils literal notranslate"><span class="pre">Interactions.place_object()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.interactions.Interactions.remove_object"><code class="docutils literal notranslate"><span class="pre">Interactions.remove_object()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#controller-menu-controller-module">controller.menu_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#module-controller.view_controller">controller.view_controller module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#controller.view_controller.ViewController"><code class="docutils literal notranslate"><span class="pre">ViewController</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.__init__"><code class="docutils literal notranslate"><span class="pre">ViewController.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.display_stats"><code class="docutils literal notranslate"><span class="pre">ViewController.display_stats()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.exit"><code class="docutils literal notranslate"><span class="pre">ViewController.exit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.generate_collapsible_html"><code class="docutils literal notranslate"><span class="pre">ViewController.generate_collapsible_html()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.generate_player_stats"><code class="docutils literal notranslate"><span class="pre">ViewController.generate_player_stats()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.get_map"><code class="docutils literal notranslate"><span class="pre">ViewController.get_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.get_settings"><code class="docutils literal notranslate"><span class="pre">ViewController.get_settings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.get_speed"><code class="docutils literal notranslate"><span class="pre">ViewController.get_speed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.pause"><code class="docutils literal notranslate"><span class="pre">ViewController.pause()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.start_view"><code class="docutils literal notranslate"><span class="pre">ViewController.start_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.switch_view"><code class="docutils literal notranslate"><span class="pre">ViewController.switch_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#controller.view_controller.ViewController.toggle_speed"><code class="docutils literal notranslate"><span class="pre">ViewController.toggle_speed()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#module-controller">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model.html">model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="model.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="model.buildings.html">model.buildings package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#module-model.buildings.barracks">model.buildings.barracks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#module-model.buildings.building">model.buildings.building module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#module-model.buildings.farm">model.buildings.farm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#module-model.buildings.house">model.buildings.house module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#module-model.buildings.town_center">model.buildings.town_center module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.buildings.html#module-model.buildings">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model.player.html">model.player package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="model.player.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.player.html#module-model.player.player">model.player.player module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.player.html#model-player-strategy-module">model.player.strategy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.player.html#module-model.player">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model.resources.html">model.resources package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html#module-model.resources.food">model.resources.food module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html#module-model.resources.gold">model.resources.gold module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html#module-model.resources.resource">model.resources.resource module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html#module-model.resources.wood">model.resources.wood module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.resources.html#module-model.resources">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model.units.html">model.units package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#module-model.units.archer">model.units.archer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#module-model.units.horseman">model.units.horseman module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#module-model.units.swordsman">model.units.swordsman module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#module-model.units.unit">model.units.unit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#module-model.units.villager">model.units.villager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.units.html#module-model.units">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html#module-model.entity">model.entity module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="model.html#model.entity.Entity"><code class="docutils literal notranslate"><span class="pre">Entity</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.__init__"><code class="docutils literal notranslate"><span class="pre">Entity.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.__repr__"><code class="docutils literal notranslate"><span class="pre">Entity.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.__str__"><code class="docutils literal notranslate"><span class="pre">Entity.__str__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.damage"><code class="docutils literal notranslate"><span class="pre">Entity.damage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_coordinate"><code class="docutils literal notranslate"><span class="pre">Entity.get_coordinate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_cost"><code class="docutils literal notranslate"><span class="pre">Entity.get_cost()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_hp"><code class="docutils literal notranslate"><span class="pre">Entity.get_hp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_letter"><code class="docutils literal notranslate"><span class="pre">Entity.get_letter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_name"><code class="docutils literal notranslate"><span class="pre">Entity.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_player"><code class="docutils literal notranslate"><span class="pre">Entity.get_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_size"><code class="docutils literal notranslate"><span class="pre">Entity.get_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_spawning_time"><code class="docutils literal notranslate"><span class="pre">Entity.get_spawning_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_sprite_path"><code class="docutils literal notranslate"><span class="pre">Entity.get_sprite_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.get_task"><code class="docutils literal notranslate"><span class="pre">Entity.get_task()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.is_alive"><code class="docutils literal notranslate"><span class="pre">Entity.is_alive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.set_alive"><code class="docutils literal notranslate"><span class="pre">Entity.set_alive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.set_coordinate"><code class="docutils literal notranslate"><span class="pre">Entity.set_coordinate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.set_player"><code class="docutils literal notranslate"><span class="pre">Entity.set_player()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.set_size"><code class="docutils literal notranslate"><span class="pre">Entity.set_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.set_sprite_path"><code class="docutils literal notranslate"><span class="pre">Entity.set_sprite_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.entity.Entity.set_task"><code class="docutils literal notranslate"><span class="pre">Entity.set_task()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="model.html#module-model.game_object">model.game_object module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="model.html#model.game_object.GameObject"><code class="docutils literal notranslate"><span class="pre">GameObject</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.__init__"><code class="docutils literal notranslate"><span class="pre">GameObject.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.__str__"><code class="docutils literal notranslate"><span class="pre">GameObject.__str__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.damage"><code class="docutils literal notranslate"><span class="pre">GameObject.damage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.get_coordinate"><code class="docutils literal notranslate"><span class="pre">GameObject.get_coordinate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.get_hp"><code class="docutils literal notranslate"><span class="pre">GameObject.get_hp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.get_letter"><code class="docutils literal notranslate"><span class="pre">GameObject.get_letter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.get_name"><code class="docutils literal notranslate"><span class="pre">GameObject.get_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.get_size"><code class="docutils literal notranslate"><span class="pre">GameObject.get_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.get_sprite_path"><code class="docutils literal notranslate"><span class="pre">GameObject.get_sprite_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.is_alive"><code class="docutils literal notranslate"><span class="pre">GameObject.is_alive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.set_alive"><code class="docutils literal notranslate"><span class="pre">GameObject.set_alive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.set_coordinate"><code class="docutils literal notranslate"><span class="pre">GameObject.set_coordinate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.set_size"><code class="docutils literal notranslate"><span class="pre">GameObject.set_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="model.html#model.game_object.GameObject.set_sprite_path"><code class="docutils literal notranslate"><span class="pre">GameObject.set_sprite_path()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="model.html#module-model">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#module-test.test_coordinate">test.test_coordinate module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate"><code class="docutils literal notranslate"><span class="pre">TestCoordinate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.__call__"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.__call__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.__eq__"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.__eq__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.__hash__"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.__hash__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.__init__"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.__repr__"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.__str__"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.__str__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._addExpectedFailure"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._addExpectedFailure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._addSkip"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._addSkip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._addUnexpectedSuccess"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._addUnexpectedSuccess()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._baseAssertEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._baseAssertEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._callCleanup"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._callCleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._callSetUp"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._callSetUp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._callTearDown"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._callTearDown()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._callTestMethod"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._callTestMethod()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._class_cleanups"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._class_cleanups</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._deprecate"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._deprecate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._diffThreshold"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._diffThreshold</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._feedErrorsToResult"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._feedErrorsToResult()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._formatMessage"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._formatMessage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._getAssertEqualityFunc"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._getAssertEqualityFunc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate._truncateMessage"><code class="docutils literal notranslate"><span class="pre">TestCoordinate._truncateMessage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.addClassCleanup"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.addClassCleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.addCleanup"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.addCleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.addTypeEqualityFunc"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.addTypeEqualityFunc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertAlmostEquals"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertAlmostEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertCountEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertCountEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertDictContainsSubset"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertDictContainsSubset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertDictEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertDictEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertEquals"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertFalse"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertFalse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertGreater"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertGreater()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertGreaterEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertGreaterEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertIn"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertIn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertIs"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertIs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertIsInstance"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertIsInstance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertIsNone"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertIsNone()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertIsNot"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertIsNot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertIsNotNone"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertIsNotNone()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertLess"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertLess()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertLessEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertLessEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertListEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertListEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertLogs"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertLogs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertMultiLineEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertMultiLineEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotAlmostEquals"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotAlmostEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotEquals"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotIn"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotIn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotIsInstance"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotIsInstance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotRegex"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertNotRegexpMatches"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertNotRegexpMatches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertRaises"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertRaises()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertRaisesRegex"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertRaisesRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertRaisesRegexp"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertRaisesRegexp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertRegex"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertRegexpMatches"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertRegexpMatches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertSequenceEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertSequenceEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertSetEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertSetEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertTrue"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertTrue()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertTupleEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertTupleEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertWarns"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertWarns()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assertWarnsRegex"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assertWarnsRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.assert_"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.assert_()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.countTestCases"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.countTestCases()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.debug"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.defaultTestResult"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.defaultTestResult()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.doClassCleanups"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.doClassCleanups()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.doCleanups"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.doCleanups()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.fail"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.fail()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failIf"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failIf()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failIfAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failIfAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failIfEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failIfEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failUnless"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failUnless()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failUnlessAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failUnlessAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failUnlessEqual"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failUnlessEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failUnlessRaises"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failUnlessRaises()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.failureException"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.failureException</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.id"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.longMessage"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.longMessage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.maxDiff"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.maxDiff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.run"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.setUp"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.setUp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.setUpClass"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.setUpClass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.shortDescription"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.shortDescription()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.skipTest"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.skipTest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.subTest"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.subTest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.tearDown"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.tearDown()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.tearDownClass"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.tearDownClass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_abs"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_abs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_add"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_and"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_and()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_distance"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_distance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_eq"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_eq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_floordiv"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_floordiv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_ge"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_ge()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_get_x"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_get_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_get_y"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_get_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_gt"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_gt()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_hash"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_hash()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_invert"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_invert()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_is_adjacent"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_is_adjacent()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_is_in_range"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_is_in_range()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_le"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_le()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_lshift"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_lshift()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_lt"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_lt()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_mod"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_mod()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_mul"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_mul()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_neg"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_neg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_or"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_or()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_pos"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_pos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_pow"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_pow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_repr"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_repr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_rshift"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_rshift()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_set_x"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_set_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_set_y"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_set_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_str"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_str()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_sub"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_sub()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_true_div"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_true_div()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_coordinate.TestCoordinate.test_xor"><code class="docutils literal notranslate"><span class="pre">TestCoordinate.test_xor()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#module-test.test_map">test.test_map module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.__call__"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.__call__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.__eq__"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.__eq__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.__hash__"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.__hash__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.__init__"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.__repr__"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.__str__"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.__str__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._addExpectedFailure"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._addExpectedFailure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._addSkip"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._addSkip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._addUnexpectedSuccess"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._addUnexpectedSuccess()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._baseAssertEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._baseAssertEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._callCleanup"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._callCleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._callSetUp"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._callSetUp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._callTearDown"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._callTearDown()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._callTestMethod"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._callTestMethod()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._class_cleanups"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._class_cleanups</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._deprecate"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._deprecate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._diffThreshold"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._diffThreshold</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._feedErrorsToResult"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._feedErrorsToResult()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._formatMessage"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._formatMessage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._getAssertEqualityFunc"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._getAssertEqualityFunc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate._truncateMessage"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate._truncateMessage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.addClassCleanup"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.addClassCleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.addCleanup"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.addCleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.addTypeEqualityFunc"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.addTypeEqualityFunc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertAlmostEquals"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertAlmostEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertCountEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertCountEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertDictContainsSubset"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertDictContainsSubset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertDictEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertDictEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertEquals"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertFalse"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertFalse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertGreater"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertGreater()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertGreaterEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertGreaterEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertIn"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertIn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertIs"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertIs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertIsInstance"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertIsInstance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertIsNone"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertIsNone()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertIsNot"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertIsNot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertIsNotNone"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertIsNotNone()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertLess"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertLess()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertLessEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertLessEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertListEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertListEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertLogs"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertLogs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertMultiLineEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertMultiLineEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotAlmostEquals"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotAlmostEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotEquals"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotEquals()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotIn"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotIn()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotIsInstance"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotIsInstance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotRegex"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertNotRegexpMatches"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertNotRegexpMatches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertRaises"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertRaises()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertRaisesRegex"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertRaisesRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertRaisesRegexp"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertRaisesRegexp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertRegex"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertRegexpMatches"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertRegexpMatches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertSequenceEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertSequenceEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertSetEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertSetEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertTrue"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertTrue()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertTupleEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertTupleEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertWarns"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertWarns()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assertWarnsRegex"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assertWarnsRegex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.assert_"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.assert_()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.countTestCases"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.countTestCases()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.debug"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.defaultTestResult"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.defaultTestResult()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.doClassCleanups"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.doClassCleanups()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.doCleanups"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.doCleanups()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.fail"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.fail()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failIf"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failIf()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failIfAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failIfAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failIfEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failIfEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failUnless"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failUnless()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failUnlessAlmostEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failUnlessAlmostEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failUnlessEqual"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failUnlessEqual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failUnlessRaises"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failUnlessRaises()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.failureException"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.failureException</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.id"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.longMessage"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.longMessage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.maxDiff"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.maxDiff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.run"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.setUp"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.setUp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.setUpClass"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.setUpClass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.shortDescription"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.shortDescription()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.skipTest"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.skipTest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.subTest"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.subTest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.tearDown"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.tearDown()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.tearDownClass"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.tearDownClass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_add_building"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_add_building()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_add_unit"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_add_unit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_check_placement"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_check_placement()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_from_to"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_from_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_map"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_map_from_to"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_map_from_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_map_list"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_map_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_map_list_from_to"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_map_list_from_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_method"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_method()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_get_size"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_get_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_move_unit"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_move_unit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_remove_building"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_remove_building()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="test.html#test.test_map.TestMapCoordinate.test_remove_unit"><code class="docutils literal notranslate"><span class="pre">TestMapCoordinate.test_remove_unit()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html#module-test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="util.html">util package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="util.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="util.html#module-util.coordinate">util.coordinate module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.coordinate.Coordinate"><code class="docutils literal notranslate"><span class="pre">Coordinate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__abs__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__abs__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__add__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__add__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__and__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__and__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__eq__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__eq__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__floordiv__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__floordiv__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__ge__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__ge__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__gt__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__gt__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__hash__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__hash__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__init__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__invert__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__invert__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__le__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__le__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__lshift__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__lshift__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__lt__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__lt__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__mod__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__mod__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__mul__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__mul__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__neg__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__neg__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__or__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__or__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__pos__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__pos__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__pow__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__pow__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__repr__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__rshift__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__rshift__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__str__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__str__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__sub__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__sub__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__truediv__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__truediv__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.__xor__"><code class="docutils literal notranslate"><span class="pre">Coordinate.__xor__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.distance"><code class="docutils literal notranslate"><span class="pre">Coordinate.distance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.get_x"><code class="docutils literal notranslate"><span class="pre">Coordinate.get_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.get_y"><code class="docutils literal notranslate"><span class="pre">Coordinate.get_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.is_adjacent"><code class="docutils literal notranslate"><span class="pre">Coordinate.is_adjacent()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.is_in_range"><code class="docutils literal notranslate"><span class="pre">Coordinate.is_in_range()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.set_x"><code class="docutils literal notranslate"><span class="pre">Coordinate.set_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.coordinate.Coordinate.set_y"><code class="docutils literal notranslate"><span class="pre">Coordinate.set_y()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html#module-util.map">util.map module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.map.Map"><code class="docutils literal notranslate"><span class="pre">Map</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.DIRECTIONS"><code class="docutils literal notranslate"><span class="pre">Map.DIRECTIONS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__force_add"><code class="docutils literal notranslate"><span class="pre">Map.__force_add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__force_move"><code class="docutils literal notranslate"><span class="pre">Map.__force_move()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__force_remove"><code class="docutils literal notranslate"><span class="pre">Map.__force_remove()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__getstate__"><code class="docutils literal notranslate"><span class="pre">Map.__getstate__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__init__"><code class="docutils literal notranslate"><span class="pre">Map.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__repr__"><code class="docutils literal notranslate"><span class="pre">Map.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__setstate__"><code class="docutils literal notranslate"><span class="pre">Map.__setstate__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.__str__"><code class="docutils literal notranslate"><span class="pre">Map.__str__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.add"><code class="docutils literal notranslate"><span class="pre">Map.add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.capture"><code class="docutils literal notranslate"><span class="pre">Map.capture()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.check_placement"><code class="docutils literal notranslate"><span class="pre">Map.check_placement()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.find_nearest_empty_zones"><code class="docutils literal notranslate"><span class="pre">Map.find_nearest_empty_zones()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.find_nearest_enemies"><code class="docutils literal notranslate"><span class="pre">Map.find_nearest_enemies()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.find_nearest_objects"><code class="docutils literal notranslate"><span class="pre">Map.find_nearest_objects()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get"><code class="docutils literal notranslate"><span class="pre">Map.get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get_from_to"><code class="docutils literal notranslate"><span class="pre">Map.get_from_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get_map"><code class="docutils literal notranslate"><span class="pre">Map.get_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get_map_from_to"><code class="docutils literal notranslate"><span class="pre">Map.get_map_from_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get_map_list"><code class="docutils literal notranslate"><span class="pre">Map.get_map_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get_map_list_from_to"><code class="docutils literal notranslate"><span class="pre">Map.get_map_list_from_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.get_size"><code class="docutils literal notranslate"><span class="pre">Map.get_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.indicate_color"><code class="docutils literal notranslate"><span class="pre">Map.indicate_color()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.move"><code class="docutils literal notranslate"><span class="pre">Map.move()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.path_finding"><code class="docutils literal notranslate"><span class="pre">Map.path_finding()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.path_finding_avoid"><code class="docutils literal notranslate"><span class="pre">Map.path_finding_avoid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.path_finding_non_diagonal"><code class="docutils literal notranslate"><span class="pre">Map.path_finding_non_diagonal()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.remove"><code class="docutils literal notranslate"><span class="pre">Map.remove()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.map.Map.tabler_str"><code class="docutils literal notranslate"><span class="pre">Map.tabler_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html#module-util.settings">util.settings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.settings.Settings"><code class="docutils literal notranslate"><span class="pre">Settings</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.settings.Settings.__init__"><code class="docutils literal notranslate"><span class="pre">Settings.__init__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html#module-util.state_manager">util.state_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.state_manager.FPS"><code class="docutils literal notranslate"><span class="pre">FPS</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.FPS.FPS_15"><code class="docutils literal notranslate"><span class="pre">FPS.FPS_15</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.FPS.FPS_30"><code class="docutils literal notranslate"><span class="pre">FPS.FPS_30</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.FPS.FPS_60"><code class="docutils literal notranslate"><span class="pre">FPS.FPS_60</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.state_manager.GameState"><code class="docutils literal notranslate"><span class="pre">GameState</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.GameState.GAME_OVER"><code class="docutils literal notranslate"><span class="pre">GameState.GAME_OVER</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.GameState.NOT_STARTED"><code class="docutils literal notranslate"><span class="pre">GameState.NOT_STARTED</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.GameState.PAUSED"><code class="docutils literal notranslate"><span class="pre">GameState.PAUSED</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.GameState.PLAYING"><code class="docutils literal notranslate"><span class="pre">GameState.PLAYING</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.state_manager.MapSize"><code class="docutils literal notranslate"><span class="pre">MapSize</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MapSize.LARGE"><code class="docutils literal notranslate"><span class="pre">MapSize.LARGE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MapSize.MEDIUM"><code class="docutils literal notranslate"><span class="pre">MapSize.MEDIUM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MapSize.SMALL"><code class="docutils literal notranslate"><span class="pre">MapSize.SMALL</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.state_manager.MapType"><code class="docutils literal notranslate"><span class="pre">MapType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MapType.GOLD_CENTER"><code class="docutils literal notranslate"><span class="pre">MapType.GOLD_CENTER</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MapType.RICH"><code class="docutils literal notranslate"><span class="pre">MapType.RICH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MapType.TEST"><code class="docutils literal notranslate"><span class="pre">MapType.TEST</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.state_manager.MenuOptions"><code class="docutils literal notranslate"><span class="pre">MenuOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.EXIT"><code class="docutils literal notranslate"><span class="pre">MenuOptions.EXIT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.LOAD_GAME"><code class="docutils literal notranslate"><span class="pre">MenuOptions.LOAD_GAME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.RESTART"><code class="docutils literal notranslate"><span class="pre">MenuOptions.RESTART</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.RESUME"><code class="docutils literal notranslate"><span class="pre">MenuOptions.RESUME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.SAVE_GAME"><code class="docutils literal notranslate"><span class="pre">MenuOptions.SAVE_GAME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.SETTINGS"><code class="docutils literal notranslate"><span class="pre">MenuOptions.SETTINGS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.MenuOptions.START_GAME"><code class="docutils literal notranslate"><span class="pre">MenuOptions.START_GAME</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="util.html#util.state_manager.StartingCondition"><code class="docutils literal notranslate"><span class="pre">StartingCondition</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.StartingCondition.LEAN"><code class="docutils literal notranslate"><span class="pre">StartingCondition.LEAN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="util.html#util.state_manager.StartingCondition.MEAN"><code class="docutils literal notranslate"><span class="pre">StartingCondition.MEAN</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="util.html#module-util">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="view.html">view package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="view.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view.menus.html">view.menus package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="view.menus.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.menus.html#module-view.menus.load_view">view.menus.load_view module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.menus.html#module-view.menus.menu_view">view.menus.menu_view module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.menus.html#module-view.menus.settings_view">view.menus.settings_view module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.menus.html#module-view.menus">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#module-view.base_view">view.base_view module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view.html#view.base_view.BaseView"><code class="docutils literal notranslate"><span class="pre">BaseView</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.base_view.BaseView.__init__"><code class="docutils literal notranslate"><span class="pre">BaseView.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.base_view.BaseView.show"><code class="docutils literal notranslate"><span class="pre">BaseView.show()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#module-view.gui_view">view.gui_view module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#module-view.terminal_view">view.terminal_view module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view.html#view.terminal_view.TerminalView"><code class="docutils literal notranslate"><span class="pre">TerminalView</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__add_coord"><code class="docutils literal notranslate"><span class="pre">TerminalView.__add_coord()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__colored_line"><code class="docutils literal notranslate"><span class="pre">TerminalView.__colored_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__display_loop"><code class="docutils literal notranslate"><span class="pre">TerminalView.__display_loop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__init__"><code class="docutils literal notranslate"><span class="pre">TerminalView.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__input_loop"><code class="docutils literal notranslate"><span class="pre">TerminalView.__input_loop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__size"><code class="docutils literal notranslate"><span class="pre">TerminalView.__size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__str_frame"><code class="docutils literal notranslate"><span class="pre">TerminalView.__str_frame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.__str_map"><code class="docutils literal notranslate"><span class="pre">TerminalView.__str_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.exit"><code class="docutils literal notranslate"><span class="pre">TerminalView.exit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.terminal_view.TerminalView.show"><code class="docutils literal notranslate"><span class="pre">TerminalView.show()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#module-view.tile_manager">view.tile_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view.html#view.tile_manager.TileManager"><code class="docutils literal notranslate"><span class="pre">TileManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.tile_manager.TileManager.__init__"><code class="docutils literal notranslate"><span class="pre">TileManager.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.tile_manager.TileManager.get_texture"><code class="docutils literal notranslate"><span class="pre">TileManager.get_texture()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#module-view.view_2_5D">view.view_2_5D module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D"><code class="docutils literal notranslate"><span class="pre">View2_5D</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D.__init__"><code class="docutils literal notranslate"><span class="pre">View2_5D.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D.__input_loop"><code class="docutils literal notranslate"><span class="pre">View2_5D.__input_loop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D.exit"><code class="docutils literal notranslate"><span class="pre">View2_5D.exit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D.render_map"><code class="docutils literal notranslate"><span class="pre">View2_5D.render_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D.render_minimap"><code class="docutils literal notranslate"><span class="pre">View2_5D.render_minimap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="view.html#view.view_2_5D.View2_5D.show"><code class="docutils literal notranslate"><span class="pre">View2_5D.show()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view.html#module-view">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="AIge of EmpAIres documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="controller.html" class="btn btn-neutral float-right" title="controller package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025 - INSA Centre Val de Loire.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

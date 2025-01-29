@@ -1,0 +1,53 @@
+model.units package
+===================
+
+Submodules
+----------
+
+model.units.archer module
+-------------------------
+
+.. automodule:: model.units.archer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.units.horseman module
+---------------------------
+
+.. automodule:: model.units.horseman
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.units.swordsman module
+----------------------------
+
+.. automodule:: model.units.swordsman
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.units.unit module
+-----------------------
+
+.. automodule:: model.units.unit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.units.villager module
+---------------------------
+
+.. automodule:: model.units.villager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: model.units
+   :members:
+   :undoc-members:
+   :show-inheritance:

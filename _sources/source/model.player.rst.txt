@@ -1,0 +1,29 @@
+model.player package
+====================
+
+Submodules
+----------
+
+model.player.player module
+--------------------------
+
+.. automodule:: model.player.player
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+model.player.strategy module
+----------------------------
+
+.. automodule:: model.player.strategy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: model.player
+   :members:
+   :undoc-members:
+   :show-inheritance:
